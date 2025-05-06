@@ -8,7 +8,7 @@ chapter: 01
 
 # Key Concepts 🔑
 - Modern networks form the backbone of global communication across the [[Internet]], enabling instant, border‑free sharing of data, voice and video.  
-- Every end device (or **[[Host]]**) uses a Network Interface Card ([[NIC]]) to connect to the network, while intermediary devices (switches, routers, firewalls) steer traffic.  
+- Every end device (or [[Host]]) uses a Network Interface Card ([[NIC]]) to connect to the network, while intermediary devices (switches, routers, firewalls) steer traffic.  
 - Network structure is documented with both **physical** and **logical** [[Topology]] diagrams, each showing different but complementary views.  
 - A [[LAN]] serves a small geographic area at high speeds; multiple LANs link together over service‑provider infrastructure to form a [[WAN]].  
 - Converged networks carry voice, video and data on the same cables; maintaining quality demands robust [[QoS]] mechanisms.  
