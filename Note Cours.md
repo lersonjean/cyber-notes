@@ -44,3 +44,8 @@ sudo pacman -S spice-vdagent xf86-video-qxl
 sudo systemctl start spice-vdagent 
 
 
+UDP
+Pas de controle de fluxm ne va pas se soucier de quoi que ce soit 
+Il va oublier tout direct
+UDps 
+
