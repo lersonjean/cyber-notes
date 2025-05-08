@@ -18,6 +18,7 @@ The lab simulates a small network scenario, demonstrating DHCP services, SSH con
 ## Network Topology
 ![Lab1 Topology(1)](Lab1%20Topology(1).jpg)
 
+![Lab1 Topology(1)](Lab1%20Topology(1).jpg)
 ## Devices and Configuration
 
 ### PCs
