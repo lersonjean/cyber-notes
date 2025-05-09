@@ -12,15 +12,15 @@ tags:
 chapter: 9
 ---
 
-[[toc]]
+<strong>toc</strong>
 
 # Key Concepts 🔑
 - The **Network Layer** enables end devices to exchange data across multiple networks by encapsulating transport-layer segments into packets.
-- Four core operations: **[[Device Addressing]]**, **[[Encapsulation]]**, **[[Decapsulation]]**, and **[[Routing]]**.
+- Four core operations: **<strong>Device Addressing</strong>**, **<strong>Encapsulation</strong>**, **<strong>Decapsulation</strong>**, and **<strong>Routing</strong>**.
 - IP is **Connectionless**, offers **Best-effort delivery**, and is **Media-independent**.
-- **IPv4** header fields include Version, **[[Differentiated Services (QoS)]]**, **[[Header Checksum]]**, **Time to Live (TTL)**, Protocol, Source & Destination Addresses; IPv4 faces address depletion and relies on NAT.
-- **IPv6** improvements: 128-bit addressing, fixed 40-byte header (no checksum or fragmentation fields), optional **[[Extension Headers]]**, restored end-to-end connectivity.
-- Host routing logic: loopback vs. local vs. remote determination via subnet mask; use of **[[Default Gateway]]**.
+- **IPv4** header fields include Version, **<strong>Differentiated Services (QoS)</strong>**, **<strong>Header Checksum</strong>**, **Time to Live (TTL)**, Protocol, Source & Destination Addresses; IPv4 faces address depletion and relies on NAT.
+- **IPv6** improvements: 128-bit addressing, fixed 40-byte header (no checksum or fragmentation fields), optional **<strong>Extension Headers</strong>**, restored end-to-end connectivity.
+- Host routing logic: loopback vs. local vs. remote determination via subnet mask; use of **<strong>Default Gateway</strong>**.
 - Router forwarding: routing table entries (Connected, Static, Dynamic, Default), **Longest-prefix match**, `show ip route` codes.
 
 # Quiz
@@ -109,37 +109,37 @@ Serves as the exit point for remote destinations; forwards packets to other netw
 # Glossary
 | Term                                    | Definition                                                                                         |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------|
-| **[[Best-effort delivery]]**            | Attempting packet delivery without guarantees of arrival, order, or error recovery.                |
-| **[[Connectionless]]**                  | Sending packets independently without establishing a prior session.                                |
-| **[[Decapsulation]]**                   | Removing the network-layer header at the destination to reveal the transport-layer segment.        |
-| **[[Default Gateway]]**                 | The exit device for remote network traffic on a local network.                                     |
-| **[[Default Route]]**                   | A last-resort routing entry used when no specific route matches the destination.                  |
-| **[[DHCP]]**                            | Protocol for dynamically assigning IP addresses and network configuration to hosts.               |
-| **[[Directly Connected Network]]**      | A network segment attached directly to a router’s interface.                                      |
-| **[[Dynamic Routing]]**                 | Routing method using protocols to automatically discover and update routes.                       |
-| **[[Dynamic Routing Protocol]]**        | Protocols (e.g., OSPF, EIGRP) that exchange routing information between routers.                   |
-| **[[Encapsulation]]**                   | Adding a network-layer header to a transport-layer segment to form a packet.                       |
-| **[[Extension Headers]]**               | Optional IPv6 headers for features like fragmentation, security, or mobility.                     |
-| **[[Fragmentation]]**                   | Breaking a large packet into smaller ones to fit the MTU of a network link.                       |
-| **[[Header Checksum]]**                 | IPv4 header field for error detection in the header itself.                                       |
-| **[[Hop Limit]]**                       | IPv6 equivalent of TTL, decremented by one at each hop to prevent loops.                          |
-| **[[IPv4]]**                            | Internet Protocol version 4, using 32-bit addresses and variable-length headers.                   |
-| **[[IPv6]]**                            | Internet Protocol version 6, using 128-bit addresses and a simplified fixed-length header.        |
-| **[[IP Packet]]**                       | The unit of data at the network layer, containing a header and payload from the transport layer.  |
-| **[[Loopback Address]]**                | Special address (127.0.0.1 for IPv4, ::1 for IPv6) used by a host to send traffic to itself.     |
-| **[[Longest-prefix match]]**            | Rule selecting the most specific routing table entry for packet forwarding.                       |
-| **[[Media-independent]]**               | IP’s ability to operate over any Layer 2/1 technology without modification.                        |
-| **[[MTU]]**                             | Maximum Transmission Unit; largest packet size that can be sent over a network segment.            |
-| **[[NAT]]**                             | Translating private IP addresses to a public IP for IPv4 internet communication.                  |
-| **[[Network Layer]]**                   | OSI Model Layer 3 responsible for addressing, encapsulation, routing, and decapsulation.          |
-| **[[Protocol (field)]]**                | IP header field identifying the higher-layer protocol (e.g., TCP, UDP).                           |
-| **[[Remote Network]]**                  | A network not directly attached to the local router but reachable via other routers.              |
-| **[[Routing]]**                         | Process of selecting paths for packets to travel across networks.                                 |
-| **[[Routing Table]]**                   | Data structure mapping network destinations to next hops or exit interfaces.                      |
-| **[[Router Advertisements (RA)]]**      | IPv6 messages from routers to advertise network and gateway information.                          |
-| **[[show ip route]]**                   | Command to display a router’s IPv4 routing table and codes for route sources.                     |
-| **[[Static Routing]]**                  | Manually configured routes that remain fixed until changed by an administrator.                   |
-| **[[Time to Live (TTL)]]**              | IPv4 header field limiting packet lifespan by hop count.                                          |
+| **<strong>Best-effort delivery</strong>**            | Attempting packet delivery without guarantees of arrival, order, or error recovery.                |
+| **<strong>Connectionless</strong>**                  | Sending packets independently without establishing a prior session.                                |
+| **<strong>Decapsulation</strong>**                   | Removing the network-layer header at the destination to reveal the transport-layer segment.        |
+| **<strong>Default Gateway</strong>**                 | The exit device for remote network traffic on a local network.                                     |
+| **<strong>Default Route</strong>**                   | A last-resort routing entry used when no specific route matches the destination.                  |
+| **<strong>DHCP</strong>**                            | Protocol for dynamically assigning IP addresses and network configuration to hosts.               |
+| **<strong>Directly Connected Network</strong>**      | A network segment attached directly to a router’s interface.                                      |
+| **<strong>Dynamic Routing</strong>**                 | Routing method using protocols to automatically discover and update routes.                       |
+| **<strong>Dynamic Routing Protocol</strong>**        | Protocols (e.g., OSPF, EIGRP) that exchange routing information between routers.                   |
+| **<strong>Encapsulation</strong>**                   | Adding a network-layer header to a transport-layer segment to form a packet.                       |
+| **<strong>Extension Headers</strong>**               | Optional IPv6 headers for features like fragmentation, security, or mobility.                     |
+| **<strong>Fragmentation</strong>**                   | Breaking a large packet into smaller ones to fit the MTU of a network link.                       |
+| **<strong>Header Checksum</strong>**                 | IPv4 header field for error detection in the header itself.                                       |
+| **<strong>Hop Limit</strong>**                       | IPv6 equivalent of TTL, decremented by one at each hop to prevent loops.                          |
+| **<strong>IPv4</strong>**                            | Internet Protocol version 4, using 32-bit addresses and variable-length headers.                   |
+| **<strong>IPv6</strong>**                            | Internet Protocol version 6, using 128-bit addresses and a simplified fixed-length header.        |
+| **<strong>IP Packet</strong>**                       | The unit of data at the network layer, containing a header and payload from the transport layer.  |
+| **<strong>Loopback Address</strong>**                | Special address (127.0.0.1 for IPv4, ::1 for IPv6) used by a host to send traffic to itself.     |
+| **<strong>Longest-prefix match</strong>**            | Rule selecting the most specific routing table entry for packet forwarding.                       |
+| **<strong>Media-independent</strong>**               | IP’s ability to operate over any Layer 2/1 technology without modification.                        |
+| **<strong>MTU</strong>**                             | Maximum Transmission Unit; largest packet size that can be sent over a network segment.            |
+| **<strong>NAT</strong>**                             | Translating private IP addresses to a public IP for IPv4 internet communication.                  |
+| **<strong>Network Layer</strong>**                   | OSI Model Layer 3 responsible for addressing, encapsulation, routing, and decapsulation.          |
+| **<strong>Protocol (field)</strong>**                | IP header field identifying the higher-layer protocol (e.g., TCP, UDP).                           |
+| **<strong>Remote Network</strong>**                  | A network not directly attached to the local router but reachable via other routers.              |
+| **<strong>Routing</strong>**                         | Process of selecting paths for packets to travel across networks.                                 |
+| **<strong>Routing Table</strong>**                   | Data structure mapping network destinations to next hops or exit interfaces.                      |
+| **<strong>Router Advertisements (RA)</strong>**      | IPv6 messages from routers to advertise network and gateway information.                          |
+| **<strong>show ip route</strong>**                   | Command to display a router’s IPv4 routing table and codes for route sources.                     |
+| **<strong>Static Routing</strong>**                  | Manually configured routes that remain fixed until changed by an administrator.                   |
+| **<strong>Time to Live (TTL)</strong>**              | IPv4 header field limiting packet lifespan by hop count.                                          |
 
 # Chapter Summary
 - The Network Layer’s four functions—Device Addressing, Encapsulation, Decapsulation, and Routing—are essential for inter-network communication.  
@@ -148,4 +148,4 @@ Serves as the exit point for remote destinations; forwards packets to other netw
 - Hosts use subnet masks to distinguish local vs. remote traffic and forward remote packets to a Default Gateway.  
 - Routers consult routing tables (Connected, Static, Dynamic, Default) and use longest-prefix match to forward packets efficiently.
 
-Related: [[CCNA – Chapter 07]] | [[CCNA – Chapter 09]]
+Related: <strong>CCNA – Chapter 07</strong> | <strong>CCNA – Chapter 09</strong>

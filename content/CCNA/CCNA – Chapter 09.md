@@ -5,13 +5,13 @@ chapter: 09
 ---
 
 # Key Concepts 🔑
-- [[MAC Address]] (Layer 2) delivers Ethernet frames locally, while the unchanging [[IP Address]] (Layer 3) routes packets end‑to‑end.  
-- [[Address Resolution Protocol (ARP)]] maps IPv4 addresses to MAC addresses through broadcast [[ARP Request]]s and unicast [[ARP Reply]]s.  
-- Devices store learned mappings in an [[ARP Table]] that ages out automatically.  
-- IPv6 replaces ARP with [[Neighbor Discovery Protocol (NDP)]], using ICMPv6 [[Neighbor Solicitation (NS)]] and [[Neighbor Advertisement (NA)]] messages for address resolution.  
-- [[Router Solicitation (RS)]] and [[Router Advertisement (RA)]] messages enable hosts to discover gateways, prefixes and perform [[SLAAC]].  
-- Excessive ARP broadcasts waste bandwidth and open the door to [[ARP Poisoning]]; enterprise switches offer mitigation features.  
-- For off‑link traffic, frames use the MAC address of the [[Default Gateway]] interface—not the remote host’s MAC.
+- <strong>MAC Address</strong> (Layer 2) delivers Ethernet frames locally, while the unchanging <strong>IP Address</strong> (Layer 3) routes packets end‑to‑end.  
+- <strong>Address Resolution Protocol (ARP)</strong> maps IPv4 addresses to MAC addresses through broadcast <strong>ARP Request</strong>s and unicast <strong>ARP Reply</strong>s.  
+- Devices store learned mappings in an <strong>ARP Table</strong> that ages out automatically.  
+- IPv6 replaces ARP with <strong>Neighbor Discovery Protocol (NDP)</strong>, using ICMPv6 <strong>Neighbor Solicitation (NS)</strong> and <strong>Neighbor Advertisement (NA)</strong> messages for address resolution.  
+- <strong>Router Solicitation (RS)</strong> and <strong>Router Advertisement (RA)</strong> messages enable hosts to discover gateways, prefixes and perform <strong>SLAAC</strong>.  
+- Excessive ARP broadcasts waste bandwidth and open the door to <strong>ARP Poisoning</strong>; enterprise switches offer mitigation features.  
+- For off‑link traffic, frames use the MAC address of the <strong>Default Gateway</strong> interface—not the remote host’s MAC.
 
 # Quiz
 1. **Explain the primary difference in the function of a MAC address and an IP address.**  
@@ -56,7 +56,7 @@ chapter: 09
 
 9. **What protocol does IPv6 use instead of ARP for address resolution?**  
    <details><summary>Answer</summary>
-   [[Neighbor Discovery Protocol (NDP)]].  
+   <strong>Neighbor Discovery Protocol (NDP)</strong>.  
    </details>
 
 10. **Briefly describe the roles of Neighbor Solicitation and Neighbor Advertisement messages.**  
@@ -65,18 +65,18 @@ chapter: 09
     </details>
 
 # Essay Questions
-- Compare and contrast [[Address Resolution Protocol (ARP)]] in IPv4 and [[Neighbor Discovery Protocol (NDP)]] in IPv6, noting similarities and differences.  
-- Explain how a host forwards a packet to a remote network, emphasising address resolution for the [[Default Gateway]].  
+- Compare and contrast <strong>Address Resolution Protocol (ARP)</strong> in IPv4 and <strong>Neighbor Discovery Protocol (NDP)</strong> in IPv6, noting similarities and differences.  
+- Explain how a host forwards a packet to a remote network, emphasising address resolution for the <strong>Default Gateway</strong>.  
 - Discuss security vulnerabilities of ARP and outline mitigation techniques (e.g., dynamic ARP inspection).  
 - Detail ICMPv6 message types used by NDP and the role each plays in IPv6 networking.  
-- Describe why maintaining an [[ARP Table]] or IPv6 Neighbor Cache is important, including entry ageing and manual management.
+- Describe why maintaining an <strong>ARP Table</strong> or IPv6 Neighbor Cache is important, including entry ageing and manual management.
 
 # FAQ
 > [!faq]- **Fundamental differences between MAC and IP addresses**  
 > MAC addresses work at Layer 2 for local delivery; IP addresses work at Layer 3 for end‑to‑end routing. Frames use MACs, packets use IPs.
 
 > [!faq]- **How does ARP function in IPv4?**  
-> The host checks its [[ARP Table]]; if no mapping exists it broadcasts an [[ARP Request]]. The target replies with an [[ARP Reply]] containing its MAC.
+> The host checks its <strong>ARP Table</strong>; if no mapping exists it broadcasts an <strong>ARP Request</strong>. The target replies with an <strong>ARP Reply</strong> containing its MAC.
 
 > [!faq]- **Two primary functions of ARP**  
 > 1) Resolve IPv4‑to‑MAC mappings. 2) Build and maintain the ARP cache for efficiency.
@@ -85,13 +85,13 @@ chapter: 09
 > Entries time‑out automatically; admins can view (`show ip arp`, `arp ‑a`) or clear the cache for troubleshooting.
 
 > [!faq]- **Issues/vulnerabilities with ARP**  
-> Broadcast overhead and [[ARP Poisoning]] (spoofed replies leading to man‑in‑the‑middle attacks).
+> Broadcast overhead and <strong>ARP Poisoning</strong> (spoofed replies leading to man‑in‑the‑middle attacks).
 
 > [!faq]- **How does IPv6 handle address resolution?**  
-> Through [[Neighbor Discovery Protocol (NDP)]] using ICMPv6 [[Neighbor Solicitation (NS)]] and [[Neighbor Advertisement (NA)]] messages.
+> Through <strong>Neighbor Discovery Protocol (NDP)</strong> using ICMPv6 <strong>Neighbor Solicitation (NS)</strong> and <strong>Neighbor Advertisement (NA)</strong> messages.
 
 > [!faq]- **Other NDP functions**  
-> Router discovery via [[Router Solicitation (RS)]]/[[Router Advertisement (RA)]] and better‑next‑hop redirection.
+> Router discovery via <strong>Router Solicitation (RS)</strong>/<strong>Router Advertisement (RA)</strong> and better‑next‑hop redirection.
 
 > [!faq]- **Key ICMPv6 message types for NDP**  
 > NS, NA, RS, RA and Redirect.
@@ -121,13 +121,13 @@ chapter: 09
 | Solicited‑Node Multicast Address | Special IPv6 multicast used as the target of NS messages. |
 
 # Chapter Summary
-- [[MAC Address]]es are rewritten each hop; [[IP Address]]es remain constant for end‑to‑end delivery.  
-- [[Address Resolution Protocol (ARP)]] resolves IPv4 addresses to MAC addresses and caches the result in an [[ARP Table]].  
-- Excessive ARP broadcasts strain large LANs, and spoofed replies enable [[ARP Poisoning]].  
-- IPv6 eliminates ARP, using [[Neighbor Discovery Protocol (NDP)]] with ICMPv6 NS/NA messages for address resolution.  
-- [[Router Solicitation (RS)]]/[[Router Advertisement (RA)]] messages supply prefixes, gateways and enable [[SLAAC]].  
-- For off‑link traffic a host sends the frame to its [[Default Gateway]]’s MAC, not the remote host’s MAC.  
+- <strong>MAC Address</strong>es are rewritten each hop; <strong>IP Address</strong>es remain constant for end‑to‑end delivery.  
+- <strong>Address Resolution Protocol (ARP)</strong> resolves IPv4 addresses to MAC addresses and caches the result in an <strong>ARP Table</strong>.  
+- Excessive ARP broadcasts strain large LANs, and spoofed replies enable <strong>ARP Poisoning</strong>.  
+- IPv6 eliminates ARP, using <strong>Neighbor Discovery Protocol (NDP)</strong> with ICMPv6 NS/NA messages for address resolution.  
+- <strong>Router Solicitation (RS)</strong>/<strong>Router Advertisement (RA)</strong> messages supply prefixes, gateways and enable <strong>SLAAC</strong>.  
+- For off‑link traffic a host sends the frame to its <strong>Default Gateway</strong>’s MAC, not the remote host’s MAC.  
 - ARP and NDP caches age out entries automatically; manual management aids troubleshooting.  
 - Understanding address‑resolution flow is essential for diagnosing connectivity issues at Layer 2/3.
 
-Related: [[CCNA – Chapter 08]] | [[CCNA – Chapter 10]]
+Related: <strong>CCNA – Chapter 08</strong> | <strong>CCNA – Chapter 10</strong>

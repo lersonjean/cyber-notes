@@ -4,19 +4,19 @@ tags: [ccna, chapter-17, networking, study, small-network, troubleshooting, qos,
 chapter: 17
 ---
 
-[[toc]]
+<strong>toc</strong>
 
 # Key Concepts 🔑
 - Cost is the primary design driver for small/medium business networks.  
-- Device selection must weigh port/interface speed, features, and long-term [[Scalability]].  
-- [[Redundancy]] increases reliability but is often limited by budget—identify and protect single points of failure.  
+- Device selection must weigh port/interface speed, features, and long-term <strong>Scalability</strong>.  
+- <strong>Redundancy</strong> increases reliability but is often limited by budget—identify and protect single points of failure.  
 - Plan IP addressing for every host, server, peripheral, and intermediary device before deployment.  
-- Real-time traffic (voice, video) needs [[QoS]] so high-priority queues are serviced first.  
-- Core protocols in small networks: [[HTTP]], [[HTTPS]], [[DNS]], [[DHCP]], [[FTP]], [[SSH]], and [[Telnet]].  
-- Capture a network [[Baseline Performance]] snapshot to benchmark future changes.  
-- Cisco’s six-step troubleshooting method plus tools like [[Ping]], [[Traceroute]], and IOS *show*/*debug* commands speed fault isolation.  
+- Real-time traffic (voice, video) needs <strong>QoS</strong> so high-priority queues are serviced first.  
+- Core protocols in small networks: <strong>HTTP</strong>, <strong>HTTPS</strong>, <strong>DNS</strong>, <strong>DHCP</strong>, <strong>FTP</strong>, <strong>SSH</strong>, and <strong>Telnet</strong>.  
+- Capture a network <strong>Baseline Performance</strong> snapshot to benchmark future changes.  
+- Cisco’s six-step troubleshooting method plus tools like <strong>Ping</strong>, <strong>Traceroute</strong>, and IOS *show*/*debug* commands speed fault isolation.  
 - Comprehensive documentation, device inventory, budget forecasting, and traffic analysis are the pillars of growth planning.  
-- Watch for [[Duplex Mismatch]] on links; mismatches cripple performance and are visible with *show* commands.
+- Watch for <strong>Duplex Mismatch</strong> on links; mismatches cripple performance and are visible with *show* commands.
 
 # Quiz
 1. What is typically the most important factor when selecting networking devices for a small business?  
@@ -25,16 +25,16 @@ chapter: 17
 2. Why is redundancy often limited in small networks?  
    <details><summary>Answer</summary>Implementing duplicate equipment or alternate links is costly, so small networks usually limit redundancy.</details>
 
-3. What is the purpose of [[QoS]] in a network?  
+3. What is the purpose of <strong>QoS</strong> in a network?  
    <details><summary>Answer</summary>QoS prioritises traffic so real-time applications (voice, video) receive preferential treatment to maintain quality.</details>
 
 4. List two common protocols used in both large and small networks.  
-   <details><summary>Answer</summary>[[HTTP]] and [[DNS]].</details>
+   <details><summary>Answer</summary><strong>HTTP</strong> and <strong>DNS</strong>.</details>
 
-5. Name four key areas important for ensuring a network can [[Scalability|scale]].  
+5. Name four key areas important for ensuring a network can <strong>Scalability|scale</strong>.  
    <details><summary>Answer</summary>Documentation, inventory, budget, and traffic analysis.</details>
 
-6. What is the purpose of creating a network [[Baseline Performance|baseline]]?  
+6. What is the purpose of creating a network <strong>Baseline Performance|baseline</strong>?  
    <details><summary>Answer</summary>To capture performance at a specific time so future changes can be compared against the baseline.</details>
 
 7. What command is used on a Windows host to view basic IP configuration information?  
@@ -43,7 +43,7 @@ chapter: 17
 8. What are the first three steps of the Cisco six-step troubleshooting methodology?  
    <details><summary>Answer</summary>Identify the problem, establish a theory of probable cause, and test the theory.</details>
 
-9. What does a **U** indicator mean in the output of an IOS [[Ping]] command?  
+9. What does a **U** indicator mean in the output of an IOS <strong>Ping</strong> command?  
    <details><summary>Answer</summary>“Destination unreachable.”</details>
 
 10. What information can the *show cdp neighbors* command provide?  
@@ -91,7 +91,7 @@ HTTP/HTTPS enable web access and cloud apps; DHCP automates IP assignment, reduc
 
 # FAQ
 > [!question]- **What factors are important when selecting devices for a small network?**  
-> Cost, port/interface capabilities, scalability, OS features, functionality, reliability, and potential for [[Redundancy]].
+> Cost, port/interface capabilities, scalability, OS features, functionality, reliability, and potential for <strong>Redundancy</strong>.
 
 > [!question]- **How is IP addressing managed in small networks?**  
 > Plan the addressing scheme for all end devices, servers, peripherals, and intermediary devices so every node receives a unique IP.
@@ -100,13 +100,13 @@ HTTP/HTTPS enable web access and cloud apps; DHCP automates IP assignment, reduc
 > Redundancy removes single points of failure. SMBs evaluate risk versus cost: often only critical links or devices are duplicated.
 
 > [!question]- **What role do applications and protocols play in a small network?**  
-> Network applications (browsers, email) use protocols like [[HTTP]], [[HTTPS]], [[FTP]], [[DHCP]], [[DNS]]. Real-time apps rely on [[RTP]]/[[RTCP]] plus [[QoS]].
+> Network applications (browsers, email) use protocols like <strong>HTTP</strong>, <strong>HTTPS</strong>, <strong>FTP</strong>, <strong>DHCP</strong>, <strong>DNS</strong>. Real-time apps rely on <strong>RTP</strong>/<strong>RTCP</strong> plus <strong>QoS</strong>.
 
 > [!question]- **What are the key considerations for scaling a small network?**  
 > Detailed documentation, accurate device inventory, a realistic budget, and traffic/baseline analysis.
 
 > [!question]- **How can connectivity be verified and performance measured?**  
-> Use [[Ping]] for reachability, [[Traceroute]] for path discovery, extended versions for advanced options, and store outputs as part of a baseline.
+> Use <strong>Ping</strong> for reachability, <strong>Traceroute</strong> for path discovery, extended versions for advanced options, and store outputs as part of a baseline.
 
 > [!question]- **What host and IOS commands aid configuration and troubleshooting?**  
 > Windows: `ipconfig`, `arp -a`, `netsh`.  
@@ -120,59 +120,59 @@ HTTP/HTTPS enable web access and cloud apps; DHCP automates IP assignment, reduc
 # Glossary
 | Term | Definition |
 |------|------------|
-| [[App-layer services]] | Software components that prepare data for transmission for applications lacking network capability. |
-| [[Baseline Performance]] | Snapshot of network metrics at a point in time for future comparison. |
-| [[CDP (Cisco Discovery Protocol)]] | Cisco proprietary protocol for discovering neighbouring Cisco devices. |
+| <strong>App-layer services</strong> | Software components that prepare data for transmission for applications lacking network capability. |
+| <strong>Baseline Performance</strong> | Snapshot of network metrics at a point in time for future comparison. |
+| <strong>CDP (Cisco Discovery Protocol)</strong> | Cisco proprietary protocol for discovering neighbouring Cisco devices. |
 | debug command | IOS command showing real-time system messages for targeted troubleshooting. |
-| [[DHCP (Dynamic Host Configuration Protocol)]] | Automatically assigns IP configuration to devices. |
-| [[DNS (Domain Name System)]] | Translates domain names into IP addresses. |
-| [[Duplex Mismatch]] | Two connected interfaces using different duplex modes, causing poor performance. |
+| <strong>DHCP (Dynamic Host Configuration Protocol)</strong> | Automatically assigns IP configuration to devices. |
+| <strong>DNS (Domain Name System)</strong> | Translates domain names into IP addresses. |
+| <strong>Duplex Mismatch</strong> | Two connected interfaces using different duplex modes, causing poor performance. |
 | Escalation | Passing an issue to higher-level support when unresolved at current level. |
 | Extended Ping/Traceroute | Interactive IOS versions of ping/traceroute offering advanced options. |
-| [[FTP (File Transfer Protocol)]] | Transfers files between networked computers. |
-| [[HTTP (Hypertext Transfer Protocol)]] | Foundation of data communication on the Web. |
-| [[HTTPS (Hypertext Transfer Protocol Secure)]] | Encrypted version of HTTP. |
-| [[ICMP (Internet Control Message Protocol)]] | Used by ping/traceroute to send error and status messages. |
+| <strong>FTP (File Transfer Protocol)</strong> | Transfers files between networked computers. |
+| <strong>HTTP (Hypertext Transfer Protocol)</strong> | Foundation of data communication on the Web. |
+| <strong>HTTPS (Hypertext Transfer Protocol Secure)</strong> | Encrypted version of HTTP. |
+| <strong>ICMP (Internet Control Message Protocol)</strong> | Used by ping/traceroute to send error and status messages. |
 | ifconfig | Unix-like command to display or configure network interfaces. |
 | ipconfig | Windows command to display network interface parameters. |
-| [[IOS (Internetwork Operating System)]] | Operating system on Cisco network devices. |
+| <strong>IOS (Internetwork Operating System)</strong> | Operating system on Cisco network devices. |
 | IP Telephony | Voice call control servers operating over IP networks. |
 | netsh | Windows utility for advanced network configuration. |
-| [[Network Applications]] | Software directly implementing application-layer protocols. |
-| [[Network Baseline]] | See **Baseline Performance**. |
+| <strong>Network Applications</strong> | Software directly implementing application-layer protocols. |
+| <strong>Network Baseline</strong> | See **Baseline Performance**. |
 | nslookup | Command-line DNS query tool. |
-| [[Ping]] | Tests reachability and round-trip time to a host. |
-| [[QoS (Quality of Service)]] | Techniques to manage and prioritise network traffic. |
-| [[Redundancy]] | Duplication of components/links to avoid single points of failure. |
-| [[RTCP (Real-time Control Protocol)]] | Provides out-of-band control for RTP streams and QoS feedback. |
-| [[RTP (Real-time Transport Protocol)]] | Delivers audio/video over IP. |
-| [[Scalability]] | Ability of a network to grow and adapt to rising demand. |
+| <strong>Ping</strong> | Tests reachability and round-trip time to a host. |
+| <strong>QoS (Quality of Service)</strong> | Techniques to manage and prioritise network traffic. |
+| <strong>Redundancy</strong> | Duplication of components/links to avoid single points of failure. |
+| <strong>RTCP (Real-time Control Protocol)</strong> | Provides out-of-band control for RTP streams and QoS feedback. |
+| <strong>RTP (Real-time Transport Protocol)</strong> | Delivers audio/video over IP. |
+| <strong>Scalability</strong> | Ability of a network to grow and adapt to rising demand. |
 | SFTP (SSH File Transfer Protocol) | Secure file transfer over SSH. |
 | show commands | IOS commands that display configuration and status information. |
-| [[SSH (Secure Shell)]] | Secure, encrypted remote-access protocol. |
-| [[Telnet]] | Insecure text-oriented remote-access protocol. |
+| <strong>SSH (Secure Shell)</strong> | Secure, encrypted remote-access protocol. |
+| <strong>Telnet</strong> | Insecure text-oriented remote-access protocol. |
 | Terminal Monitor | IOS command showing logging messages on vty sessions. |
-| [[Traceroute]] | Diagnostic tool tracing the hop path to a destination. |
-| [[VoIP (Voice over IP)]] | Voice communication carried over IP networks. |
+| <strong>Traceroute</strong> | Diagnostic tool tracing the hop path to a destination. |
+| <strong>VoIP (Voice over IP)</strong> | Voice communication carried over IP networks. |
 
 # Study-at-a-glance
 > [!tip]
 > - **Design:** Anchor choices in cost, but document for future growth.  
 > - **Addressing:** Allocate IPs for every planned device—don’t forget printers, cameras, IoT.  
-> - **Traffic:** Apply [[QoS]] so voice/video stay smooth; capture a baseline as proof.  
+> - **Traffic:** Apply <strong>QoS</strong> so voice/video stay smooth; capture a baseline as proof.  
 > - **Tools:** Master `ipconfig`, `ifconfig`, `show ip interface brief`, `ping`, and `traceroute`.  
 > - **Troubleshoot:** Follow the six-step method; check duplex, gateway, DNS first.  
 > - **Growth:** Keep diagrams and inventories current; review traffic stats quarterly.
 
 # Chapter Summary
 - Cost shapes every decision in an SMB network.  
-- Limited budgets often preclude full [[Redundancy]]; protect only the truly critical.  
+- Limited budgets often preclude full <strong>Redundancy</strong>; protect only the truly critical.  
 - Proper IP planning prevents painful renumbering later.  
-- Real-time apps demand [[QoS]] and protocols like [[RTP]]/[[RTCP]].  
-- Documentation, inventory, budget, and traffic analysis underpin sustainable [[Scalability]].  
-- Capture a [[Baseline Performance]] before and after changes for objective comparison.  
+- Real-time apps demand <strong>QoS</strong> and protocols like <strong>RTP</strong>/<strong>RTCP</strong>.  
+- Documentation, inventory, budget, and traffic analysis underpin sustainable <strong>Scalability</strong>.  
+- Capture a <strong>Baseline Performance</strong> before and after changes for objective comparison.  
 - Troubleshoot systematically with Cisco’s six-step process and verification commands.  
 - Monitor duplex, IP addressing, default gateway, and DNS settings—they cause most user tickets.  
 - Use callouts, details, and cross-links in notes to speed up study and review.
 
-Related: [[CCNA – Chapter 16]] | [[CCNA – Chapter 18]]
+Related: <strong>CCNA – Chapter 16</strong> | <strong>CCNA – Chapter 18</strong>

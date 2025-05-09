@@ -4,23 +4,23 @@ tags: [ccna, chapter-04, networking, study, physical-layer, osi, copper, fiber, 
 chapter: 04
 ---
 
-[[toc]]
+<strong>toc</strong>
 
 # Key Concepts 🔑
-- The [[Physical Layer]] (Layer 1) provides the essential wired or wireless link that underpins all network communication.  
+- The <strong>Physical Layer</strong> (Layer 1) provides the essential wired or wireless link that underpins all network communication.  
 - It converts complete frames from the Data Link layer into a serial bit‑stream and encodes them as electrical, optical, or radio signals.  
-- Standards bodies (IEEE, TIA/EIA, ITU, ISO) define Layer 1 [[encoding]], [[signaling]], connectors, and testing to guarantee interoperability.  
-- Network performance at this layer is described by [[Bandwidth]], [[Latency]], [[Throughput]], and [[Goodput]].  
-- Copper media—[[UTP]], [[STP]], and [[Coaxial Cable]]—is inexpensive but limited to ≈100 m and vulnerable to [[Attenuation]], EMI/RFI, and [[Crosstalk]].  
-- [[Fiber Optic Cable]] ([[Single‑mode Fiber (SMF)]] / [[Multimode Fiber (MMF)]]) carries light pulses for very high bandwidth over long distances and is immune to electrical noise.  
-- Wireless media (IEEE 802.11/15/16) offers mobility via a [[Wireless Access Point (AP or WAP)]], but bandwidth is shared, half‑duplex, and interference‑prone.  
-- Proper cable selection—[[Straight-through Cable]], [[Crossover Cable]], [[Rollover Cable]]—plus Auto‑MDIX ensures correct pinouts between devices.
+- Standards bodies (IEEE, TIA/EIA, ITU, ISO) define Layer 1 <strong>encoding</strong>, <strong>signaling</strong>, connectors, and testing to guarantee interoperability.  
+- Network performance at this layer is described by <strong>Bandwidth</strong>, <strong>Latency</strong>, <strong>Throughput</strong>, and <strong>Goodput</strong>.  
+- Copper media—<strong>UTP</strong>, <strong>STP</strong>, and <strong>Coaxial Cable</strong>—is inexpensive but limited to ≈100 m and vulnerable to <strong>Attenuation</strong>, EMI/RFI, and <strong>Crosstalk</strong>.  
+- <strong>Fiber Optic Cable</strong> (<strong>Single‑mode Fiber (SMF)</strong> / <strong>Multimode Fiber (MMF)</strong>) carries light pulses for very high bandwidth over long distances and is immune to electrical noise.  
+- Wireless media (IEEE 802.11/15/16) offers mobility via a <strong>Wireless Access Point (AP or WAP)</strong>, but bandwidth is shared, half‑duplex, and interference‑prone.  
+- Proper cable selection—<strong>Straight-through Cable</strong>, <strong>Crossover Cable</strong>, <strong>Rollover Cable</strong>—plus Auto‑MDIX ensures correct pinouts between devices.
 
 # Quiz
 <details>
 <summary>1. What is the primary purpose of the physical layer in network communication?</summary>
 
-**Answer:** The [[Physical Layer]]'s main purpose is to establish the physical connection between devices and transmit raw bits over the network medium. It takes data from the upper layers and encodes it into signals appropriate for the chosen media.
+**Answer:** The <strong>Physical Layer</strong>'s main purpose is to establish the physical connection between devices and transmit raw bits over the network medium. It takes data from the upper layers and encodes it into signals appropriate for the chosen media.
 
 </details>
 
@@ -34,7 +34,7 @@ chapter: 04
 <details>
 <summary>3. What is the role of a Network Interface Card (NIC) at the physical layer?</summary>
 
-**Answer:** A [[Network Interface Card (NIC)]] provides the hardware interface that connects a device to the network medium (wired, wireless, or cellular).
+**Answer:** A <strong>Network Interface Card (NIC)</strong> provides the hardware interface that connects a device to the network medium (wired, wireless, or cellular).
 
 </details>
 
@@ -48,35 +48,35 @@ chapter: 04
 <details>
 <summary>5. Define bandwidth and explain how it is typically measured.</summary>
 
-**Answer:** [[Bandwidth]] is the maximum capacity of a medium to carry data, measured in bits per second (bps), kilobits /s (Kbps), megabits /s (Mbps), etc.
+**Answer:** <strong>Bandwidth</strong> is the maximum capacity of a medium to carry data, measured in bits per second (bps), kilobits /s (Kbps), megabits /s (Mbps), etc.
 
 </details>
 
 <details>
 <summary>6. What is attenuation, and what type of physical media is particularly susceptible to it?</summary>
 
-**Answer:** [[Attenuation]] is signal weakening over distance; copper cabling is especially susceptible.
+**Answer:** <strong>Attenuation</strong> is signal weakening over distance; copper cabling is especially susceptible.
 
 </details>
 
 <details>
 <summary>7. Describe two types of noise that can affect copper cabling.</summary>
 
-**Answer:** [[Electromagnetic Interference (EMI)]] (electrical noise) and [[Radio Frequency Interference (RFI)]] (radio‑wave noise).
+**Answer:** <strong>Electromagnetic Interference (EMI)</strong> (electrical noise) and <strong>Radio Frequency Interference (RFI)</strong> (radio‑wave noise).
 
 </details>
 
 <details>
 <summary>8. What is crosstalk, and how is it mitigated in twisted‑pair copper cables?</summary>
 
-**Answer:** [[Crosstalk]] is interference between adjacent wires. Twisting the pairs at differing rates cancels much of the interference.
+**Answer:** <strong>Crosstalk</strong> is interference between adjacent wires. Twisting the pairs at differing rates cancels much of the interference.
 
 </details>
 
 <details>
 <summary>9. What is the primary difference between single‑mode fiber (SMF) and multimode fiber (MMF)?</summary>
 
-**Answer:** [[Single‑mode Fiber (SMF)]] has a smaller core, uses a laser, and supports very long distances; [[Multimode Fiber (MMF)]] has a larger core, uses an LED, and is suited for shorter distances.
+**Answer:** <strong>Single‑mode Fiber (SMF)</strong> has a smaller core, uses a laser, and supports very long distances; <strong>Multimode Fiber (MMF)</strong> has a larger core, uses an LED, and is suited for shorter distances.
 
 </details>
 
@@ -92,7 +92,7 @@ chapter: 04
 <summary>1. Compare and contrast copper, fiber‑optic, and wireless media in terms of bandwidth capabilities, transmission distance, cost, and susceptibility to interference. Discuss typical applications for each type.</summary>
 
 **Answer:**  
-- **Copper (UTP/STP/Coax):** Up to 10 Gbps (Cat 6A), limited to ~100 m, low cost, susceptible to EMI/RFI and [[Crosstalk]]. Typical for LAN drops, patch panels, and short‑run interconnects.  
+- **Copper (UTP/STP/Coax):** Up to 10 Gbps (Cat 6A), limited to ~100 m, low cost, susceptible to EMI/RFI and <strong>Crosstalk</strong>. Typical for LAN drops, patch panels, and short‑run interconnects.  
 - **Fiber‑optic:** 10 Gbps–400 Gbps+, distances of kilometres (SMF) or hundreds of metres (MMF), higher cost, immune to electrical interference. Used for data‑center backbones, long‑haul links, FTTH, and ISP peering.  
 - **Wireless:** 600 Mbps–10 Gbps (Wi‑Fi 6/7 theoretical), distances vary (tens of metres indoors), low to moderate infrastructure cost but shared bandwidth, prone to interference and security risks. Ideal for mobility in homes, campuses, and IoT.
 
@@ -113,7 +113,7 @@ These bodies ensure that cables, connectors, and transceivers from different ven
 <summary>3. Detail the process of encapsulation and de‑encapsulation as it relates to the physical layer.</summary>
 
 **Answer:**  
-At transmission, the application payload is successively wrapped in a segment (Transport), packet (Network), and frame (Data Link). The [[Physical Layer]] encodes that frame into bits and transmits signals over the medium. At the receiver, the reverse (de‑encapsulation) occurs: signals → bits → frame → packet → segment → data.
+At transmission, the application payload is successively wrapped in a segment (Transport), packet (Network), and frame (Data Link). The <strong>Physical Layer</strong> encodes that frame into bits and transmits signals over the medium. At the receiver, the reverse (de‑encapsulation) occurs: signals → bits → frame → packet → segment → data.
 
 </details>
 
@@ -121,7 +121,7 @@ At transmission, the application payload is successively wrapped in a segment (T
 <summary>4. Discuss the different types of copper cabling, including UTP, STP, and coaxial cable. Explain the construction of each type and how features like twisting and shielding mitigate issues such as attenuation and interference.</summary>
 
 **Answer:**  
-- **UTP:** Four twisted pairs, no shielding; twisting combats [[Crosstalk]].  
+- **UTP:** Four twisted pairs, no shielding; twisting combats <strong>Crosstalk</strong>.  
 - **STP:** Same pair structure plus foil/braided shielding around pairs or bundle; shielding blocks EMI/RFI.  
 - **Coaxial Cable:** Central conductor, dielectric, braided shield, outer jacket; concentric design provides excellent EMI immunity. Shielding and controlled impedance reduce attenuation and external noise.
 
@@ -136,14 +136,14 @@ Copper uses RJ‑45 connectors with T568A or T568B pinouts. **Straight‑through
 </details>
 
 # FAQ
-> [!question]- What is the purpose of the [[Physical Layer]] in networking?  
+> [!question]- What is the purpose of the <strong>Physical Layer</strong> in networking?  
 > The layer establishes and manages the physical connection, converts frames to bits, and encodes/signals them onto the medium.
 
 > [!question]- What functional areas are addressed by the Physical Layer?  
-> Physical components, [[encoding]], and [[signaling]]—all governed by standards such as IEEE 802.3.
+> Physical components, <strong>encoding</strong>, and <strong>signaling</strong>—all governed by standards such as IEEE 802.3.
 
 > [!question]- How is data transmission measured at this layer?  
-> Primarily by [[Bandwidth]] (capacity), with supporting metrics of [[Latency]], [[Throughput]], and [[Goodput]].
+> Primarily by <strong>Bandwidth</strong> (capacity), with supporting metrics of <strong>Latency</strong>, <strong>Throughput</strong>, and <strong>Goodput</strong>.
 
 > [!question]- What are the three main cabling types and their characteristics?  
 > **Copper:** cheap, short‑range, interference‑prone. **Fiber:** expensive, long‑range, interference‑free. **Wireless:** mobile, shared, interference‑prone.
@@ -163,38 +163,38 @@ Copper uses RJ‑45 connectors with T568A or T568B pinouts. **Straight‑through
 # Glossary
 | Term | Definition |
 | --- | --- |
-| [[Attenuation]] | Signal degradation or weakening over distance. |
-| [[Bandwidth]] | Maximum data‑carrying capacity of a medium (bps). |
-| [[Coaxial Cable]] | Copper cable with central conductor, dielectric, shield, jacket. |
-| [[Crossover Cable]] | Ethernet cable wired T568A↔T568B to connect like devices. |
-| [[Crosstalk]] | Interference from adjacent wire pairs or cables. |
-| [[Electromagnetic Interference (EMI)]] | Electrical noise disrupting copper signals. |
-| [[Encoding]] | Converting bits into a predictable signal format. |
-| [[Fiber Optic Cable]] | Cable that transmits data as light through glass or plastic. |
-| [[Goodput]] | Usable data transfer rate (throughput minus protocol overhead). |
-| [[Latency]] | Delay for data to travel from source to destination. |
-| [[Multimode Fiber (MMF)]] | Fiber with larger core, LED source, short‑distance use. |
-| [[Network Interface Card (NIC)]] | Hardware interface connecting a device to a network. |
-| [[Physical Layer]] | OSI Layer 1; handles physical media and bit transmission. |
-| [[Radio Frequency Interference (RFI)]] | Noise from radio sources affecting copper cabling. |
-| [[Rollover Cable]] | Cisco console cable (serial ↔ RJ‑45). |
-| [[Shielded Twisted Pair (STP)]] | Twisted‑pair copper with additional shielding. |
-| [[Signaling]] | Representation of bits on the medium (voltage, light, RF). |
-| [[Single‑mode Fiber (SMF)]] | Fiber with small core, laser source, long‑distance use. |
-| [[Straight-through Cable]] | Ethernet cable with identical pinout on both ends. |
-| [[Throughput]] | Actual bit rate observed over a medium at a moment in time. |
-| [[Twisted Pair Cable]] | Copper cabling with paired wires twisted to reduce noise. |
-| [[Unshielded Twisted Pair (UTP)]] | Most common twisted‑pair cable lacking shielding. |
-| [[Wireless Access Point (AP or WAP)]] | Device bridging wireless clients to a wired LAN. |
+| <strong>Attenuation</strong> | Signal degradation or weakening over distance. |
+| <strong>Bandwidth</strong> | Maximum data‑carrying capacity of a medium (bps). |
+| <strong>Coaxial Cable</strong> | Copper cable with central conductor, dielectric, shield, jacket. |
+| <strong>Crossover Cable</strong> | Ethernet cable wired T568A↔T568B to connect like devices. |
+| <strong>Crosstalk</strong> | Interference from adjacent wire pairs or cables. |
+| <strong>Electromagnetic Interference (EMI)</strong> | Electrical noise disrupting copper signals. |
+| <strong>Encoding</strong> | Converting bits into a predictable signal format. |
+| <strong>Fiber Optic Cable</strong> | Cable that transmits data as light through glass or plastic. |
+| <strong>Goodput</strong> | Usable data transfer rate (throughput minus protocol overhead). |
+| <strong>Latency</strong> | Delay for data to travel from source to destination. |
+| <strong>Multimode Fiber (MMF)</strong> | Fiber with larger core, LED source, short‑distance use. |
+| <strong>Network Interface Card (NIC)</strong> | Hardware interface connecting a device to a network. |
+| <strong>Physical Layer</strong> | OSI Layer 1; handles physical media and bit transmission. |
+| <strong>Radio Frequency Interference (RFI)</strong> | Noise from radio sources affecting copper cabling. |
+| <strong>Rollover Cable</strong> | Cisco console cable (serial ↔ RJ‑45). |
+| <strong>Shielded Twisted Pair (STP)</strong> | Twisted‑pair copper with additional shielding. |
+| <strong>Signaling</strong> | Representation of bits on the medium (voltage, light, RF). |
+| <strong>Single‑mode Fiber (SMF)</strong> | Fiber with small core, laser source, long‑distance use. |
+| <strong>Straight-through Cable</strong> | Ethernet cable with identical pinout on both ends. |
+| <strong>Throughput</strong> | Actual bit rate observed over a medium at a moment in time. |
+| <strong>Twisted Pair Cable</strong> | Copper cabling with paired wires twisted to reduce noise. |
+| <strong>Unshielded Twisted Pair (UTP)</strong> | Most common twisted‑pair cable lacking shielding. |
+| <strong>Wireless Access Point (AP or WAP)</strong> | Device bridging wireless clients to a wired LAN. |
 
 # Chapter Summary
-- The [[Physical Layer]] converts frames into bits and places them onto copper, fiber, or wireless media.  
+- The <strong>Physical Layer</strong> converts frames into bits and places them onto copper, fiber, or wireless media.  
 - International standards (IEEE 802, TIA/EIA‑568, ITU‑T) ensure physical interoperability.  
-- Key performance metrics: [[Bandwidth]] (capacity), [[Latency]] (delay), [[Throughput]] (actual rate), [[Goodput]] (usable rate).  
-- Copper cabling (UTP/STP/Coax) is cost‑effective but limited by [[Attenuation]], EMI/RFI, and distance.  
-- [[Fiber Optic Cable]] offers high bandwidth over kilometres and immunity to electrical noise.  
+- Key performance metrics: <strong>Bandwidth</strong> (capacity), <strong>Latency</strong> (delay), <strong>Throughput</strong> (actual rate), <strong>Goodput</strong> (usable rate).  
+- Copper cabling (UTP/STP/Coax) is cost‑effective but limited by <strong>Attenuation</strong>, EMI/RFI, and distance.  
+- <strong>Fiber Optic Cable</strong> offers high bandwidth over kilometres and immunity to electrical noise.  
 - Wireless (802.11) provides mobility but is half‑duplex, shared, and susceptible to interference; security measures are essential.  
-- Correct cable types—[[Straight-through Cable]], [[Crossover Cable]], [[Rollover Cable]]—and Auto‑MDIX prevent mismatched pinouts.  
-- [[Network Interface Card (NIC)]]s provide the physical interface on hosts and infrastructure devices.
+- Correct cable types—<strong>Straight-through Cable</strong>, <strong>Crossover Cable</strong>, <strong>Rollover Cable</strong>—and Auto‑MDIX prevent mismatched pinouts.  
+- <strong>Network Interface Card (NIC)</strong>s provide the physical interface on hosts and infrastructure devices.
 
-Related: [[CCNA – Chapter 03]] | [[CCNA – Chapter 05]]
+Related: <strong>CCNA – Chapter 03</strong> | <strong>CCNA – Chapter 05</strong>

@@ -7,11 +7,11 @@ chapter: 07
 
 
 # Key Concepts 🔑
-- [[Ethernet]] spans **Layer 1** and **[[Data Link Layer (Layer 2)]]**, whose LLC (802.2) and MAC (802.3) sublayers split protocol‑ID and framing/media‑access jobs.  
-- An **Ethernet frame** = preamble + SFD, destination/source [[MAC Address]]es, [[EtherType]], data, and [[FCS]] for error detection (64 – 1518 B standard).  
+- <strong>Ethernet</strong> spans **Layer 1** and **<strong>Data Link Layer (Layer 2)</strong>**, whose LLC (802.2) and MAC (802.3) sublayers split protocol‑ID and framing/media‑access jobs.  
+- An **Ethernet frame** = preamble + SFD, destination/source <strong>MAC Address</strong>es, <strong>EtherType</strong>, data, and <strong>FCS</strong> for error detection (64 – 1518 B standard).  
 - MAC addresses are 48 bits: **OUI** (first 24 b) + vendor value; uniqueness is maintained by IEEE allocation.  
-- Switches *learn* source MACs to populate the [[MAC Address Table (CAM Table)]]; known unicast → single port, unknown/broadcast/multicast → flood.  
-- Forwarding styles: **[[Store‑and‑Forward Switching]]** (full‑frame CRC check) vs. **[[Cut‑Through Switching]]** variants—[[Fast‑Forward Switching]] (lowest latency) and [[Fragment‑Free Switching]] (checks first 64 B).  
+- Switches *learn* source MACs to populate the <strong>MAC Address Table (CAM Table)</strong>; known unicast → single port, unknown/broadcast/multicast → flood.  
+- Forwarding styles: **<strong>Store‑and‑Forward Switching</strong>** (full‑frame CRC check) vs. **<strong>Cut‑Through Switching</strong>** variants—<strong>Fast‑Forward Switching</strong> (lowest latency) and <strong>Fragment‑Free Switching</strong> (checks first 64 B).  
 - **Full‑Duplex** links eliminate collisions; **Auto‑Negotiation** sets optimal speed/duplex and prevents mismatches.  
 - **Auto‑MDIX** swaps TX/RX pairs automatically, so straight‑through or crossover cables work interchangeably.  
 - Buffering (port‑based or shared memory) smooths congestion before forwarding frames.
@@ -67,8 +67,8 @@ If the destination MAC is found, forward out the associated port; if not, flood;
 
 **MAC (IEEE 802.3)**  
 * Handles frame encapsulation/decapsulation, addressing, and media access control (CSMA/CD on legacy half‑duplex).  
-* Defines physical addressing via 48‑bit [[MAC Address]]es.  
-* Interacts directly with the Physical layer, inserting the preamble/SFD and computing the [[FCS]].
+* Defines physical addressing via 48‑bit <strong>MAC Address</strong>es.  
+* Interacts directly with the Physical layer, inserting the preamble/SFD and computing the <strong>FCS</strong>.
 
 Together they deliver reliable node‑to‑node transfer: LLC tells Layer‑3 who should receive the data, while MAC ensures it gets across the local medium correctly.
 </details>
@@ -85,7 +85,7 @@ Vendors must never reuse a value under the same OUI, and IEEE assigns each OUI o
 
 <details><summary>Explain how a Layer 2 switch learns MAC addresses and the forwarding decisions it makes.</summary>
 
-1. **Learning** – For every frame received, the switch records the **source** MAC and the ingress port in the [[MAC Address Table (CAM Table)]]. Each entry has an ageing timer (~300 s).  
+1. **Learning** – For every frame received, the switch records the **source** MAC and the ingress port in the <strong>MAC Address Table (CAM Table)</strong>. Each entry has an ageing timer (~300 s).  
 2. **Forwarding/Filtering** – When a frame arrives:  
    * **Known unicast** – destination MAC found → forward only out the listed port.  
    * **Unknown unicast** – not found → flood out all ports except ingress.  
@@ -143,7 +143,7 @@ In modern full‑duplex networks, Store‑and‑Forward dominates because latenc
 # Glossary
 | Term | Definition |
 |---|---|
-| **ARP (Address Resolution Protocol)** | Resolves an IPv4 address to its matching [[MAC Address]]. |
+| **ARP (Address Resolution Protocol)** | Resolves an IPv4 address to its matching <strong>MAC Address</strong>. |
 | **Auto‑MDIX** | Automatic cable‑type detection that swaps TX/RX pairs. |
 | **Auto‑Negotiation** | Protocol where devices agree on common speed and duplex settings. |
 | **Broadcast** | One‑to‑all transmission using destination MAC FF‑FF‑FF‑FF‑FF‑FF. |
@@ -195,4 +195,4 @@ In modern full‑duplex networks, Store‑and‑Forward dominates because latenc
 - Port‑based and shared‑memory buffering manage congestion; modern full‑duplex links remove collisions and CSMA/CD.  
 - Auto‑Negotiation aligns speed/duplex, preventing mismatches; Auto‑MDIX eliminates cable‑type concerns.  
 
-Related: [[CCNA – Chapter 06]] | [[CCNA – Chapter 08]]
+Related: <strong>CCNA – Chapter 06</strong> | <strong>CCNA – Chapter 08</strong>

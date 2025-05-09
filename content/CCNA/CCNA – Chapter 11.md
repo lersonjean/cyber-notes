@@ -4,16 +4,16 @@ tags: [ccna, chapter-11, networking, study, ipv4, subnetting, cidr, nat, vlsm]
 chapter: 11
 ---
 
-[[toc]]
+<strong>toc</strong>
 
 # Key Concepts 🔑
-- [[IPv4 Address]]es are 32‑bit numbers written in dotted‑decimal form and divided into a [[Network Portion]] and [[Host Portion]] to enable hierarchical routing.  
-- A [[Subnet Mask]] (or its [[Prefix Length (Slash Notation)]]) identifies how many leading bits belong to the network; an **IP AND mask** yields the [[Network Address]].  
-- Address types include [[Unicast]], [[Broadcast]], and [[Multicast]], each serving one‑to‑one, one‑to‑all, and one‑to‑group communication respectively.  
-- [[Private IP Addresses]] (RFC 1918) combined with [[NAT (Network Address Translation)]] conserve public space by translating internal hosts to public addresses.  
-- [[CIDR (Classless Inter-Domain Routing)]] and [[Variable-Length Subnet Masking (VLSM)]] replace fixed classful masks, letting admins “borrow” host bits to create subnets that fit real needs.  
-- A [[Broadcast Domain]] is bounded by routers or VLANs; breaking it up through [[Subnetting]] improves performance and security.  
-- A documented [[Structured IP Address Design]] plan—mixing DHCP, static assignments, and DMZ layout—prevents duplicates, aids ACLs, and scales with growth.  
+- <strong>IPv4 Address</strong>es are 32‑bit numbers written in dotted‑decimal form and divided into a <strong>Network Portion</strong> and <strong>Host Portion</strong> to enable hierarchical routing.  
+- A <strong>Subnet Mask</strong> (or its <strong>Prefix Length (Slash Notation)</strong>) identifies how many leading bits belong to the network; an **IP AND mask** yields the <strong>Network Address</strong>.  
+- Address types include <strong>Unicast</strong>, <strong>Broadcast</strong>, and <strong>Multicast</strong>, each serving one‑to‑one, one‑to‑all, and one‑to‑group communication respectively.  
+- <strong>Private IP Addresses</strong> (RFC 1918) combined with <strong>NAT (Network Address Translation)</strong> conserve public space by translating internal hosts to public addresses.  
+- <strong>CIDR (Classless Inter-Domain Routing)</strong> and <strong>Variable-Length Subnet Masking (VLSM)</strong> replace fixed classful masks, letting admins “borrow” host bits to create subnets that fit real needs.  
+- A <strong>Broadcast Domain</strong> is bounded by routers or VLANs; breaking it up through <strong>Subnetting</strong> improves performance and security.  
+- A documented <strong>Structured IP Address Design</strong> plan—mixing DHCP, static assignments, and DMZ layout—prevents duplicates, aids ACLs, and scales with growth.  
 
 # Quiz
 <details>
@@ -67,11 +67,11 @@ It prevents duplicates, streamlines troubleshooting, supports access control/mon
 </details>
 
 # Essay Questions
-- Discuss the hierarchical structure of IPv4 addresses, the roles of the network and host portions, and how [[Subnetting]] enhances routing efficiency.  
-- Compare [[Unicast]], [[Broadcast]], and [[Multicast]] addressing with real‑world protocol examples.  
-- Explain public vs. [[Private IP Addresses]] and why [[NAT (Network Address Translation)]] is essential. Include static, dynamic, and PAT variations.  
+- Discuss the hierarchical structure of IPv4 addresses, the roles of the network and host portions, and how <strong>Subnetting</strong> enhances routing efficiency.  
+- Compare <strong>Unicast</strong>, <strong>Broadcast</strong>, and <strong>Multicast</strong> addressing with real‑world protocol examples.  
+- Explain public vs. <strong>Private IP Addresses</strong> and why <strong>NAT (Network Address Translation)</strong> is essential. Include static, dynamic, and PAT variations.  
 - Detail the step‑by‑step process of subnetting a /24 into /26 networks, showing calculations for network, broadcast, and usable host ranges.  
-- Analyze the advantages of [[Variable-Length Subnet Masking (VLSM)]] over fixed‑length masks, giving scenarios where VLSM maximizes address utilization.
+- Analyze the advantages of <strong>Variable-Length Subnet Masking (VLSM)</strong> over fixed‑length masks, giving scenarios where VLSM maximizes address utilization.
 
 # FAQ
 > [!faq] What is the fundamental structure of an IPv4 address and its subnet mask?  
@@ -102,36 +102,36 @@ It prevents duplicates, streamlines troubleshooting, supports access control/mon
 # Glossary
 | Term | One‑line Definition |
 |------|--------------------|
-| [[Bitwise AND]] | Logical operation that compares bits; only 1 AND 1 = 1, used to derive a network address from IP + mask. |
-| [[Broadcast]] | One‑to‑all communication within the same broadcast domain. |
-| [[Broadcast Address]] | Last address in a subnet (all host bits 1); delivering to every host in that subnet. |
-| [[Broadcast Domain]] | Layer‑2 area bounded by routers/VLANs that receives broadcasts. |
-| [[CIDR (Classless Inter-Domain Routing)]] | Scheme using variable prefix lengths to allocate IPs more efficiently than classful addressing. |
-| [[Classful Addressing]] | Legacy scheme dividing IPv4 into fixed Classes A/B/C with default masks. |
-| [[DHCP (Dynamic Host Configuration Protocol)]] | Service that automatically assigns IP settings to hosts. |
-| [[Dotted Decimal Form]] | Human‑readable IPv4 or mask notation (e.g., 192.168.1.1). |
-| [[Host Portion]] | Bits of an IP identifying a unique device within the network. |
-| [[IANA (Internet Assigned Numbers Authority)]] | Global body overseeing IP address allocation to RIRs. |
-| [[IPv4 Address]] | 32‑bit numeric label for a device using Internet Protocol v4. |
-| [[Link-Local Address (APIPA)]] | 169.254.0.0/16 self‑assigned address when no DHCP/manual config is available. |
-| [[Loopback Address]] | 127.0.0.0/8 address block (often 127.0.0.1) used to test a host’s TCP/IP stack. |
-| [[Multicast]] | One‑to‑group traffic sent to hosts that joined a multicast group. |
-| [[NAT (Network Address Translation)]] | Process translating private IPs to public ones (and back) at a network edge. |
-| [[Network Address]] | First address in a subnet (all host bits 0); identifies the subnet itself. |
-| [[Network Portion]] | Leading bits of an IP that identify the network/subnet. |
-| [[Network Segmentation]] | Dividing a network into smaller parts (subnets, VLANs) for performance/security. |
-| [[Octet]] | One of four 8‑bit sections in an IPv4 address. |
-| [[Prefix Length (Slash Notation)]] | Number of consecutive 1s in the subnet mask (e.g., /24). |
-| [[Private IP Addresses]] | RFC 1918 ranges (10/8, 172.16/12, 192.168/16) used only inside private networks. |
-| [[Public IP Addresses]] | Globally routable IPv4 addresses on the Internet. |
-| [[Regional Internet Registries (RIRs)]] | ARIN, RIPE, APNIC, AfriNIC, LACNIC—allocate IPs within regions. |
-| [[Static Addressing]] | Manually configured fixed IP on a device. |
-| [[Structured IP Address Design]] | Planned, documented IP scheme for scalability and ease of management. |
-| [[Subnet Mask]] | 32‑bit string splitting network and host bits; e.g., 255.255.255.0. |
-| [[Subnetting]] | Borrowing host bits to create additional smaller networks. |
-| [[Unicast]] | One‑to‑one communication from a single source to a single destination. |
-| [[Usable Range]] | Assignable IPs in a subnet (between network and broadcast addresses). |
-| [[Variable-Length Subnet Masking (VLSM)]] | Using different subnet masks within a single block for efficient allocation. |
+| <strong>Bitwise AND</strong> | Logical operation that compares bits; only 1 AND 1 = 1, used to derive a network address from IP + mask. |
+| <strong>Broadcast</strong> | One‑to‑all communication within the same broadcast domain. |
+| <strong>Broadcast Address</strong> | Last address in a subnet (all host bits 1); delivering to every host in that subnet. |
+| <strong>Broadcast Domain</strong> | Layer‑2 area bounded by routers/VLANs that receives broadcasts. |
+| <strong>CIDR (Classless Inter-Domain Routing)</strong> | Scheme using variable prefix lengths to allocate IPs more efficiently than classful addressing. |
+| <strong>Classful Addressing</strong> | Legacy scheme dividing IPv4 into fixed Classes A/B/C with default masks. |
+| <strong>DHCP (Dynamic Host Configuration Protocol)</strong> | Service that automatically assigns IP settings to hosts. |
+| <strong>Dotted Decimal Form</strong> | Human‑readable IPv4 or mask notation (e.g., 192.168.1.1). |
+| <strong>Host Portion</strong> | Bits of an IP identifying a unique device within the network. |
+| <strong>IANA (Internet Assigned Numbers Authority)</strong> | Global body overseeing IP address allocation to RIRs. |
+| <strong>IPv4 Address</strong> | 32‑bit numeric label for a device using Internet Protocol v4. |
+| <strong>Link-Local Address (APIPA)</strong> | 169.254.0.0/16 self‑assigned address when no DHCP/manual config is available. |
+| <strong>Loopback Address</strong> | 127.0.0.0/8 address block (often 127.0.0.1) used to test a host’s TCP/IP stack. |
+| <strong>Multicast</strong> | One‑to‑group traffic sent to hosts that joined a multicast group. |
+| <strong>NAT (Network Address Translation)</strong> | Process translating private IPs to public ones (and back) at a network edge. |
+| <strong>Network Address</strong> | First address in a subnet (all host bits 0); identifies the subnet itself. |
+| <strong>Network Portion</strong> | Leading bits of an IP that identify the network/subnet. |
+| <strong>Network Segmentation</strong> | Dividing a network into smaller parts (subnets, VLANs) for performance/security. |
+| <strong>Octet</strong> | One of four 8‑bit sections in an IPv4 address. |
+| <strong>Prefix Length (Slash Notation)</strong> | Number of consecutive 1s in the subnet mask (e.g., /24). |
+| <strong>Private IP Addresses</strong> | RFC 1918 ranges (10/8, 172.16/12, 192.168/16) used only inside private networks. |
+| <strong>Public IP Addresses</strong> | Globally routable IPv4 addresses on the Internet. |
+| <strong>Regional Internet Registries (RIRs)</strong> | ARIN, RIPE, APNIC, AfriNIC, LACNIC—allocate IPs within regions. |
+| <strong>Static Addressing</strong> | Manually configured fixed IP on a device. |
+| <strong>Structured IP Address Design</strong> | Planned, documented IP scheme for scalability and ease of management. |
+| <strong>Subnet Mask</strong> | 32‑bit string splitting network and host bits; e.g., 255.255.255.0. |
+| <strong>Subnetting</strong> | Borrowing host bits to create additional smaller networks. |
+| <strong>Unicast</strong> | One‑to‑one communication from a single source to a single destination. |
+| <strong>Usable Range</strong> | Assignable IPs in a subnet (between network and broadcast addresses). |
+| <strong>Variable-Length Subnet Masking (VLSM)</strong> | Using different subnet masks within a single block for efficient allocation. |
 
 # Chapter Summary
 - IPv4 uses 32‑bit addresses split into network and host sections indicated by a subnet mask or prefix length.  
@@ -141,4 +141,4 @@ It prevents duplicates, streamlines troubleshooting, supports access control/mon
 - Proper IP design—including DHCP, static allocation, and documented address plans—avoids conflicts and eases growth.  
 - Knowing how to calculate subnets, hosts, and address boundaries is critical for network implementation and troubleshooting.  
 
-Related: [[CCNA – Chapter 10]] | [[CCNA – Chapter 12]]
+Related: <strong>CCNA – Chapter 10</strong> | <strong>CCNA – Chapter 12</strong>

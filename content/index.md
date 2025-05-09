@@ -2,16 +2,16 @@
 
 > [!info] **Certification Roadmap**
 > 
-> - [[ccna/index|CCNA Hub]]
+> - <strong>ccna/index|CCNA Hub</strong>
 >     
-> - [[securityplus/index|Security+ Hub]]
+> - <strong>securityplus/index|Security+ Hub</strong>
 >     
-> - [[python/index|Python Hub]]
+> - <strong>python/index|Python Hub</strong>
 >     
 
 ## Recently Updated
 
-[[Recent Notes]]
+<strong>Recent Notes</strong>
 
 ## Useful Links
 

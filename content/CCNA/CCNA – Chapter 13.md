@@ -4,13 +4,13 @@ tags: [ccna, chapter-13, networking, study, icmp, ipv6, diagnostics, troubleshoo
 chapter: 13
 ---
 
-[[toc]]
+<strong>toc</strong>
 
 # Key Concepts 🔑
-- [[ICMP]] provides Layer‑3 feedback about IP packet delivery issues, enabling basic network diagnostics.  
-- [[ICMPv6]] adds the [[Neighbor Discovery Protocol]] (NDP) for functions such as address resolution, duplicate‑address detection and router discovery.  
-- [[Ping]] uses **Echo Request/Echo Reply** messages to verify host reachability and measure round‑trip time.  
-- [[Traceroute]] manipulates **TTL/Hop Limit** and relies on **Time Exceeded** replies to reveal each hop along the path to a destination.  
+- <strong>ICMP</strong> provides Layer‑3 feedback about IP packet delivery issues, enabling basic network diagnostics.  
+- <strong>ICMPv6</strong> adds the <strong>Neighbor Discovery Protocol</strong> (NDP) for functions such as address resolution, duplicate‑address detection and router discovery.  
+- <strong>Ping</strong> uses **Echo Request/Echo Reply** messages to verify host reachability and measure round‑trip time.  
+- <strong>Traceroute</strong> manipulates **TTL/Hop Limit** and relies on **Time Exceeded** replies to reveal each hop along the path to a destination.  
 - Common ICMP error messages include **Destination Unreachable**, **Time Exceeded** and **Redirect**; understanding their codes speeds troubleshooting.  
 - Security controls often filter ICMP, so missing replies do **not** always indicate a down host or broken path.
 
@@ -66,30 +66,30 @@ chapter: 13
     </details>
 
 # Essay Questions
-- Compare and contrast ICMP in IPv4 vs. IPv6, focusing on enhancements introduced by [[ICMPv6]] [[Neighbor Discovery Protocol]].  
-- Explain how [[Ping]] and [[Traceroute]] leverage specific ICMP message types and TTL/Hop Limit to diagnose networks, including their limitations.  
-- Describe scenarios that trigger [[Destination Unreachable]] messages and explain various unreachable codes in IPv4 and IPv6.  
+- Compare and contrast ICMP in IPv4 vs. IPv6, focusing on enhancements introduced by <strong>ICMPv6</strong> <strong>Neighbor Discovery Protocol</strong>.  
+- Explain how <strong>Ping</strong> and <strong>Traceroute</strong> leverage specific ICMP message types and TTL/Hop Limit to diagnose networks, including their limitations.  
+- Describe scenarios that trigger <strong>Destination Unreachable</strong> messages and explain various unreachable codes in IPv4 and IPv6.  
 - Discuss security implications of ICMP and how blocking it affects diagnostic tools.  
-- Detail IPv6 [[SLAAC]] and the roles of Router Solicitation and Router Advertisement messages.
+- Detail IPv6 <strong>SLAAC</strong> and the roles of Router Solicitation and Router Advertisement messages.
 
 # FAQ
 > [!faq]- **What is ICMP and what is its primary purpose?**  
-> [[ICMP]] provides network‑layer feedback about packet‑delivery problems, helping diagnose why forwarding failed.
+> <strong>ICMP</strong> provides network‑layer feedback about packet‑delivery problems, helping diagnose why forwarding failed.
 
 > [!faq]- **What are common ICMP message types?**  
 > Echo (host confirmation), Destination Unreachable, Time Exceeded and Redirect.
 
 > [!faq]- **How does ICMPv6 enhance messaging compared to ICMPv4?**  
-> It introduces [[Neighbor Discovery Protocol]] with RS, RA, NS and NA messages for autoconfiguration and address resolution.
+> It introduces <strong>Neighbor Discovery Protocol</strong> with RS, RA, NS and NA messages for autoconfiguration and address resolution.
 
 > [!faq]- **What is the ping utility and what does it use ICMP for?**  
-> [[Ping]] sends Echo Requests and awaits Echo Replies to test reachability and measure round‑trip time.
+> <strong>Ping</strong> sends Echo Requests and awaits Echo Replies to test reachability and measure round‑trip time.
 
 > [!faq]- **What is the loopback address and how is ping used with it?**  
 > 127.0.0.1 (IPv4) or ::1 (IPv6) tests only the local IP stack without traversing the network.
 
 > [!faq]- **How does Traceroute work?**  
-> [[Traceroute]] increments TTL/Hop Limit and listens for Time Exceeded replies from each hop, mapping the path and latency.
+> <strong>Traceroute</strong> increments TTL/Hop Limit and listens for Time Exceeded replies from each hop, mapping the path and latency.
 
 > [!faq]- **Why might ping or traceroute fail or time out?**  
 > Host down, congestion, firewalls blocking ICMP, routing errors or address‑resolution delays.
@@ -122,9 +122,9 @@ chapter: 13
 # Chapter Summary
 - ICMP is essential for error reporting and diagnostics at Layer 3, but its traffic is often filtered for security.  
 - ICMPv6 builds on ICMP by adding Neighbor Discovery for address resolution, SLAAC and router discovery.  
-- [[Ping]] confirms host reachability and measures round‑trip time via Echo messages.  
-- [[Traceroute]] maps the path to a destination by sending probes with rising TTL and reading Time Exceeded replies.  
+- <strong>Ping</strong> confirms host reachability and measures round‑trip time via Echo messages.  
+- <strong>Traceroute</strong> maps the path to a destination by sending probes with rising TTL and reading Time Exceeded replies.  
 - Key ICMP errors—Destination Unreachable, Time Exceeded and Redirect—pinpoint common forwarding problems.  
 - Blocking ICMP improves security posture but can obscure diagnostic results, so interpret ping/traceroute failures carefully.
 
-Related: [[CCNA – Chapter 12]] | [[CCNA – Chapter 14]]
+Related: <strong>CCNA – Chapter 12</strong> | <strong>CCNA – Chapter 14</strong>

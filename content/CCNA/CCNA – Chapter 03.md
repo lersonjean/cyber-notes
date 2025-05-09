@@ -5,10 +5,10 @@ chapter: 03
 ---
 # Key Concepts 🔑
 - **Protocols** are the formal rules that let a **source**, **destination**, and **channel/media** exchange information reliably.  
-- Digital protocols manage **message encoding/decoding**, **formatting & [[Data Encapsulation]]**, **segmentation**, **timing** (flow control, response time, access method) and delivery options (**unicast**, **multicast**, **broadcast**).  
-- Protocol categories—communication, security, routing, service discovery—work together inside suites such as the open, vendor‑neutral **[[TCP/IP Model|TCP/IP]]** suite.  
-- **Open standards** from bodies like [[ISOC]], [[IETF]], [[IEEE]], [[ITU‑T]] ensure interoperability, competition and innovation.  
-- Layered **reference models**—the 7‑layer **[[OSI Model]]** and 4‑layer **TCP/IP model**—provide a common language; OSI L7‑5 ≅ TCP/IP Application, L4 ≅ Transport, L3 ≅ Internet, L2‑1 ≅ Network Access.  
+- Digital protocols manage **message encoding/decoding**, **formatting & <strong>Data Encapsulation</strong>**, **segmentation**, **timing** (flow control, response time, access method) and delivery options (**unicast**, **multicast**, **broadcast**).  
+- Protocol categories—communication, security, routing, service discovery—work together inside suites such as the open, vendor‑neutral **<strong>TCP/IP Model|TCP/IP</strong>** suite.  
+- **Open standards** from bodies like <strong>ISOC</strong>, <strong>IETF</strong>, <strong>IEEE</strong>, <strong>ITU‑T</strong> ensure interoperability, competition and innovation.  
+- Layered **reference models**—the 7‑layer **<strong>OSI Model</strong>** and 4‑layer **TCP/IP model**—provide a common language; OSI L7‑5 ≅ TCP/IP Application, L4 ≅ Transport, L3 ≅ Internet, L2‑1 ≅ Network Access.  
 - As data moves down the stack it is wrapped in headers/trailers, producing PDUs: **Data → Segment → Packet → Frame → Bits**; the reverse occurs during de‑encapsulation.  
 - **Layer‑3 logical addresses** (IPv4/IPv6) stay constant end‑to‑end, while **Layer‑2 physical addresses** (MAC) are rewritten at every router hop.
 
@@ -45,7 +45,7 @@ chapter: 03
 
 <details><summary>7. What are the two major reference models discussed in the source material?</summary>
 
-**Answer:** The **[[OSI Model]]** and the **[[TCP/IP Model]]**.  
+**Answer:** The **<strong>OSI Model</strong>** and the **<strong>TCP/IP Model</strong>**.  
 </details>
 
 <details><summary>8. Define data encapsulation in the context of network communication layers.</summary>
@@ -76,7 +76,7 @@ Application‑layer **data** is passed to the Transport layer, which adds a head
 
 <details><summary>3. Discuss the importance of standards organisations in networking.</summary>
 
-Bodies like **[[IETF]]**, **[[IEEE]]**, **[[ITU‑T]]**, **[[ICANN]]/[[IANA]]** create open standards for protocols, cabling, and addressing. Open standards guarantee device interoperability, spur market competition, and accelerate innovation. For example, IEEE 802.3 defines Ethernet, while IETF RFCs define TCP/IP protocols.  
+Bodies like **<strong>IETF</strong>**, **<strong>IEEE</strong>**, **<strong>ITU‑T</strong>**, **<strong>ICANN</strong>/<strong>IANA</strong>** create open standards for protocols, cabling, and addressing. Open standards guarantee device interoperability, spur market competition, and accelerate innovation. For example, IEEE 802.3 defines Ethernet, while IETF RFCs define TCP/IP protocols.  
 </details>
 
 <details><summary>4. Describe how addressing works at Layers 2 and 3 for same‑network vs different‑network communication.</summary>
@@ -97,7 +97,7 @@ Protocols define structure, timing and meaning, eliminating ambiguity. In digita
 > They specify **encoding**, **formatting & encapsulation**, **size limits**, **timing** (flow control, response time, access method) and **delivery options** (unicast/multicast/broadcast).
 
 > [!faq] **What are protocol suites and why are they important?**  
-> Suites like **[[TCP/IP Model|TCP/IP]]** bundle complementary protocols so that, together, they address every layer’s functions, ensuring fully interoperable communication.
+> Suites like **<strong>TCP/IP Model|TCP/IP</strong>** bundle complementary protocols so that, together, they address every layer’s functions, ensuring fully interoperable communication.
 
 > [!faq] **How do standards organisations contribute to networking?**  
 > Organisations such as **ISOC**, **IAB**, **IETF**, **IEEE** create **open standards** that ensure interoperability, boost competition and drive innovation.
@@ -114,44 +114,44 @@ Protocols define structure, timing and meaning, eliminating ambiguity. In digita
 # Glossary
 | Term | Definition |
 | ---- | ---------- |
-| [[Access Method]] | Rule that dictates when a device may transmit on a shared medium to avoid collisions. |
-| [[Broadcast]] | One‑to‑all message delivery on a local network segment. |
-| [[Channel/Media]] | Physical pathway (copper, fibre, wireless) that carries signals. |
-| [[Collision]] | Simultaneous transmissions on a shared medium that corrupt data. |
-| [[Data Encapsulation]] | Layered addition of headers/trailers as data moves down the stack. |
-| [[Data Link Layer]] | OSI Layer 2; exchanges frames and uses MAC addressing for local delivery. |
-| [[Decapsulation]] | Removal of headers/trailers as data ascends the protocol stack. |
-| [[Default Gateway]] | Router interface that forwards traffic destined for remote networks. |
-| [[Encoding]] | Converting information into a transmittable signal or format. |
-| [[Flow Control]] | Mechanism that matches transmission rate to the receiver’s capacity. |
-| [[Formalised Rules]] | Agreed‑upon protocols governing structured communication. |
-| [[Frame]] | Layer‑2 PDU containing a packet plus header and trailer. |
-| [[Header]] | Control information prepended to data at a given layer during encapsulation. |
-| [[IP]] | Core Layer‑3 protocol providing logical addressing and routing. |
-| [[Layered Model]] | Conceptual division of networking tasks into discrete functional layers. |
-| [[Logical Address]] | Layer‑3 identifier (IPv4/IPv6) independent of physical media. |
-| [[MAC Address]] | Unique Layer‑2 hardware address for local link delivery. |
-| [[Multicast]] | One‑to‑many message delivery to a selected group. |
-| [[Network Access Layer]] | TCP/IP bottom layer; combines OSI Physical and Data Link functions. |
-| [[Network Layer]] | OSI Layer 3; handles logical addressing and path selection. |
-| [[OSI Model]] | Seven‑layer reference framework for network communication. |
-| [[Packet]] | Layer‑3 PDU consisting of a segment plus IP header. |
-| [[Physical Address]] | Hardware‑burned identifier (MAC) for a network interface. |
-| [[Physical Layer]] | OSI Layer 1; transmits raw bits over the medium. |
-| [[Protocol Data Unit]] | Generic name for data at any given layer (segment, packet, frame…). |
-| [[Protocol Suite]] | Set of cooperating protocols providing complete communication capability. |
-| [[Protocols]] | Formalised rules governing message format, timing, error handling, etc. |
-| [[Reference Model]] | Layered framework that describes and categorises networking functions. |
-| [[Response Time]] | How long a device waits before retransmitting or timing out. |
-| [[Routing Protocols]] | Protocols that enable routers to exchange topology information. |
-| [[Segmentation]] | Dividing large data into smaller segments for efficient transfer. |
-| [[Sequencing]] | Numbering segments to ensure correct reassembly. |
-| [[Standards Organisation]] | Body that develops open, vendor‑neutral technical standards. |
-| [[TCP/IP Model]] | Four‑layer practical model underpinning the Internet. |
-| [[Timing]] | Collective term for flow control, response time and access method rules. |
-| [[Trailer]] | Control info (e.g., FCS) appended to data at Layer 2. |
-| [[Transport Layer]] | Provides end‑to‑end communication, segmentation and reliability. |
-| [[Unicast]] | One‑to‑one message delivery to a single recipient. |
+| <strong>Access Method</strong> | Rule that dictates when a device may transmit on a shared medium to avoid collisions. |
+| <strong>Broadcast</strong> | One‑to‑all message delivery on a local network segment. |
+| <strong>Channel/Media</strong> | Physical pathway (copper, fibre, wireless) that carries signals. |
+| <strong>Collision</strong> | Simultaneous transmissions on a shared medium that corrupt data. |
+| <strong>Data Encapsulation</strong> | Layered addition of headers/trailers as data moves down the stack. |
+| <strong>Data Link Layer</strong> | OSI Layer 2; exchanges frames and uses MAC addressing for local delivery. |
+| <strong>Decapsulation</strong> | Removal of headers/trailers as data ascends the protocol stack. |
+| <strong>Default Gateway</strong> | Router interface that forwards traffic destined for remote networks. |
+| <strong>Encoding</strong> | Converting information into a transmittable signal or format. |
+| <strong>Flow Control</strong> | Mechanism that matches transmission rate to the receiver’s capacity. |
+| <strong>Formalised Rules</strong> | Agreed‑upon protocols governing structured communication. |
+| <strong>Frame</strong> | Layer‑2 PDU containing a packet plus header and trailer. |
+| <strong>Header</strong> | Control information prepended to data at a given layer during encapsulation. |
+| <strong>IP</strong> | Core Layer‑3 protocol providing logical addressing and routing. |
+| <strong>Layered Model</strong> | Conceptual division of networking tasks into discrete functional layers. |
+| <strong>Logical Address</strong> | Layer‑3 identifier (IPv4/IPv6) independent of physical media. |
+| <strong>MAC Address</strong> | Unique Layer‑2 hardware address for local link delivery. |
+| <strong>Multicast</strong> | One‑to‑many message delivery to a selected group. |
+| <strong>Network Access Layer</strong> | TCP/IP bottom layer; combines OSI Physical and Data Link functions. |
+| <strong>Network Layer</strong> | OSI Layer 3; handles logical addressing and path selection. |
+| <strong>OSI Model</strong> | Seven‑layer reference framework for network communication. |
+| <strong>Packet</strong> | Layer‑3 PDU consisting of a segment plus IP header. |
+| <strong>Physical Address</strong> | Hardware‑burned identifier (MAC) for a network interface. |
+| <strong>Physical Layer</strong> | OSI Layer 1; transmits raw bits over the medium. |
+| <strong>Protocol Data Unit</strong> | Generic name for data at any given layer (segment, packet, frame…). |
+| <strong>Protocol Suite</strong> | Set of cooperating protocols providing complete communication capability. |
+| <strong>Protocols</strong> | Formalised rules governing message format, timing, error handling, etc. |
+| <strong>Reference Model</strong> | Layered framework that describes and categorises networking functions. |
+| <strong>Response Time</strong> | How long a device waits before retransmitting or timing out. |
+| <strong>Routing Protocols</strong> | Protocols that enable routers to exchange topology information. |
+| <strong>Segmentation</strong> | Dividing large data into smaller segments for efficient transfer. |
+| <strong>Sequencing</strong> | Numbering segments to ensure correct reassembly. |
+| <strong>Standards Organisation</strong> | Body that develops open, vendor‑neutral technical standards. |
+| <strong>TCP/IP Model</strong> | Four‑layer practical model underpinning the Internet. |
+| <strong>Timing</strong> | Collective term for flow control, response time and access method rules. |
+| <strong>Trailer</strong> | Control info (e.g., FCS) appended to data at Layer 2. |
+| <strong>Transport Layer</strong> | Provides end‑to‑end communication, segmentation and reliability. |
+| <strong>Unicast</strong> | One‑to‑one message delivery to a single recipient. |
 
 # Chapter Summary
 - Protocols impose structure, timing and error handling so devices can communicate.  
@@ -165,4 +165,4 @@ Protocols define structure, timing and meaning, eliminating ambiguity. In digita
 
 ---
 
-Related: [[CCNA – Chapter 02]] | [[CCNA – Chapter 04]]
+Related: <strong>CCNA – Chapter 02</strong> | <strong>CCNA – Chapter 04</strong>

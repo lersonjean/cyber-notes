@@ -1,11 +1,11 @@
 
-[[toc]]
+<strong>toc</strong>
 
 # Key Concepts 🔑
-- Securing initial router setup: set the [[Hostname]], protect **privileged EXEC** with `enable secret`, lock console / VTY access, apply `service password encryption`, add a `banner motd`, then save the configuration.  
+- Securing initial router setup: set the <strong>Hostname</strong>, protect **privileged EXEC** with `enable secret`, lock console / VTY access, apply `service password encryption`, add a `banner motd`, then save the configuration.  
 - Interface configuration workflow: `interface type/number` → `description …` → `ip address` / `ipv6 address` → `no shutdown` (after optional `shutdown` during edits).  
-- The role of the [[Default Gateway]] for hosts and of `ip default-gateway` for switch management.  
-- Crucial verification commands: [[show ip interface brief]], [[show ipv6 interface brief]], [[show ip route]], [[show interfaces]], [[show ip interface]], and [[show ipv6 interface]].  
+- The role of the <strong>Default Gateway</strong> for hosts and of `ip default-gateway` for switch management.  
+- Crucial verification commands: <strong>show ip interface brief</strong>, <strong>show ipv6 interface brief</strong>, <strong>show ip route</strong>, <strong>show interfaces</strong>, <strong>show ip interface</strong>, and <strong>show ipv6 interface</strong>.  
 - Router and switch provisioning share nearly identical commands and security best‑practices.
 
 # Quiz
@@ -73,8 +73,8 @@ Globally with `ip default-gateway <em>ip-address</em>`.
 - Discuss the fundamental similarities and differences between configuring a Cisco router and a Cisco switch, focusing on initial setup steps and command structures.  
 - Explain the purpose and importance of securing different access modes on a Cisco router (user EXEC, privileged EXEC, and VTY lines). Detail the commands used and the security benefits of each.  
 - Describe the process of configuring both IPv4 and IPv6 addresses on a router interface. Include the commands used and explain the role of the subnet mask or prefix length for each protocol.  
-- Compare and contrast the output of [[show ip interface brief]], [[show interfaces]], and [[show ip interface]]. Explain what specific information each command provides and when you would use each for troubleshooting.  
-- Explain the concept of a [[Default Gateway]] in the context of end devices and switches. Describe why a default gateway is necessary and how its configuration differs between a host and a switch.  
+- Compare and contrast the output of <strong>show ip interface brief</strong>, <strong>show interfaces</strong>, and <strong>show ip interface</strong>. Explain what specific information each command provides and when you would use each for troubleshooting.  
+- Explain the concept of a <strong>Default Gateway</strong> in the context of end devices and switches. Describe why a default gateway is necessary and how its configuration differs between a host and a switch.  
 
 # FAQ
 > [!question] **What are the initial basic configuration steps for a Cisco router?**  
@@ -130,11 +130,11 @@ Globally with `ip default-gateway <em>ip-address</em>`.
 | **show ipv6 route** | Displays the IPv6 routing table. |
 
 # Chapter Summary
-- Set the [[Hostname]], `enable secret`, console/VTY passwords, `service password encryption`, and `banner motd` to lock down and identify a new router.  
+- Set the <strong>Hostname</strong>, `enable secret`, console/VTY passwords, `service password encryption`, and `banner motd` to lock down and identify a new router.  
 - Preserve changes permanently with `copy running-config startup-config`.  
-- Configure interfaces with `interface`, `description`, `ip address` / `ipv6 address`, and activate using [[No Shutdown]].  
-- Always define a [[Default Gateway]] for hosts and use `ip default-gateway` on switches for remote management.  
-- Verify and troubleshoot with [[show ip interface brief]], [[show ipv6 interface brief]], [[show interfaces]], and routing‑table commands.  
+- Configure interfaces with `interface`, `description`, `ip address` / `ipv6 address`, and activate using <strong>No Shutdown</strong>.  
+- Always define a <strong>Default Gateway</strong> for hosts and use `ip default-gateway` on switches for remote management.  
+- Verify and troubleshoot with <strong>show ip interface brief</strong>, <strong>show ipv6 interface brief</strong>, <strong>show interfaces</strong>, and routing‑table commands.  
 - Disable interfaces with **Shutdown** before reconfiguring them, then document and re‑enable to minimize disruption.
 
-Related: [[CCNA – Chapter 9]] | [[CCNA – Chapter 11]]
+Related: <strong>CCNA – Chapter 9</strong> | <strong>CCNA – Chapter 11</strong>

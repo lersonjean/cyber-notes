@@ -4,11 +4,11 @@ tags: [ccna, chapter-14, networking, study, transport-layer, tcp, udp, ports, os
 chapter: 14
 ---
 
-[[toc]]
+<strong>toc</strong>
 
 # Key Concepts 🔑
-- The [[Transport Layer]] provides logical, end‑to‑end communication between applications on different hosts.  
-- [[TCP]] is connection‑oriented, reliable, and stateful; [[UDP]] is connectionless, best‑effort, and lightweight.  
+- The <strong>Transport Layer</strong> provides logical, end‑to‑end communication between applications on different hosts.  
+- <strong>TCP</strong> is connection‑oriented, reliable, and stateful; <strong>UDP</strong> is connectionless, best‑effort, and lightweight.  
 - TCP establishes sessions with a three‑way handshake (SYN, SYN‑ACK, ACK) and closes them with a four‑step FIN/ACK exchange.  
 - TCP reliability relies on sequence numbers, acknowledgements, retransmissions, and selective acknowledgement (SACK).  
 - Flow control in TCP uses the **Window Size** field; congestion avoidance algorithms adapt the send rate during network congestion.  
@@ -137,27 +137,27 @@ Large application data is segmented into smaller TCP segments/UDP datagrams. Eac
 # Glossary
 | Term | Definition |
 | --- | --- |
-| [[ACK]] | TCP flag indicating acknowledgement of received data. |
-| Best‑Effort Delivery | Service model where delivery is attempted but not guaranteed (characteristic of [[UDP]]). |
+| <strong>ACK</strong> | TCP flag indicating acknowledgement of received data. |
+| Best‑Effort Delivery | Service model where delivery is attempted but not guaranteed (characteristic of <strong>UDP</strong>). |
 | Congestion Avoidance | TCP techniques that reduce send rate when loss or delay signals congestion. |
 | Dynamic Ports | Temporary client‑side ports in range 49152‑65535. |
-| [[FIN]] | TCP flag signalling «no more data» from sender, used in connection teardown. |
+| <strong>FIN</strong> | TCP flag signalling «no more data» from sender, used in connection teardown. |
 | Flow Control | Method to prevent sender from overrunning receiver’s buffers (TCP windowing). |
 | Multiplexing | Interleaving multiple conversations over one link distinguished by port numbers. |
-| [[MSS]] | Maximum Segment Size: largest TCP payload size, typically 1460 bytes on Ethernet. |
+| <strong>MSS</strong> | Maximum Segment Size: largest TCP payload size, typically 1460 bytes on Ethernet. |
 | Netstat | CLI utility displaying active sockets, routing tables, and interface stats. |
 | Port Number | 16‑bit field identifying a process on a host; together with IP forms a socket. |
 | Registered Ports | Ports 1024‑49151 allocated by IANA for specific applications. |
-| Reliable Delivery | Guarantee that all data arrives intact and in order (feature of [[TCP]]). |
+| Reliable Delivery | Guarantee that all data arrives intact and in order (feature of <strong>TCP</strong>). |
 | Reassembly | Putting received segments back in order to reconstruct original data. |
 | Segmentation | Splitting large application data into smaller transport‑layer units. |
-| [[Socket]] | IP address + port number pair; endpoint of a transport connection. |
+| <strong>Socket</strong> | IP address + port number pair; endpoint of a transport connection. |
 | Socket Pair | Source socket + destination socket, uniquely defining one session. |
-| [[SYN]] | TCP flag initiating a connection and synchronising sequence numbers. |
+| <strong>SYN</strong> | TCP flag initiating a connection and synchronising sequence numbers. |
 | Three‑Way Handshake | SYN, SYN‑ACK, ACK exchange establishing a TCP connection. |
-| [[TCP]] | Connection‑oriented, reliable transport protocol at OSI Layer 4. |
+| <strong>TCP</strong> | Connection‑oriented, reliable transport protocol at OSI Layer 4. |
 | Transport Layer | Layer 4 of OSI model; provides host‑to‑host communication services. |
-| [[UDP]] | Connectionless, lightweight transport protocol with minimal overhead. |
+| <strong>UDP</strong> | Connectionless, lightweight transport protocol with minimal overhead. |
 | Well‑Known Ports | Ports 0‑1023 reserved for common services (e.g., HTTP 80). |
 | Window Size | TCP header field indicating receiver’s available buffer for flow control. |
 
@@ -169,6 +169,6 @@ Large application data is segmented into smaller TCP segments/UDP datagrams. Eac
 - TCP’s three‑way handshake sets initial sequence numbers; a four‑step FIN/ACK sequence closes the connection.  
 - Flow control (Window Size) and congestion avoidance keep data flowing without overrunning receivers or networks.  
 - MSS is based on MTU; exceeding it causes fragmentation or drops, so proper sizing is critical.  
-- Tools like **netstat** help diagnose active [[TCP]]/[[UDP]] sessions and listening services.
+- Tools like **netstat** help diagnose active <strong>TCP</strong>/<strong>UDP</strong> sessions and listening services.
 
-Related: [[CCNA – Chapter 13]] | [[CCNA – Chapter 15]]
+Related: <strong>CCNA – Chapter 13</strong> | <strong>CCNA – Chapter 15</strong>

@@ -4,7 +4,7 @@ tags: [ccna, chapter-15, networking, study, application-layer, protocols, osi, t
 chapter: 15
 ---
 
-[[toc]]
+<strong>toc</strong>
 
 # Key Concepts 🔑
 
@@ -158,4 +158,4 @@ Client broadcasts DHCPDISCOVER, server unicasts DHCPOFFER, client broadcasts DHC
 - Familiarize with FTP and SMB functions
 - Remember common ports (HTTP 80, HTTPS 443, SMTP 25, DNS 53)
 
-Related: [[CCNA – Chapter 14]] | [[CCNA – Chapter 16]]
+Related: <strong>CCNA – Chapter 14</strong> | <strong>CCNA – Chapter 16</strong>

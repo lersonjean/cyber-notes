@@ -4,17 +4,17 @@ tags: [ccna, chapter-12, networking, study, ipv6, addressing, subnetting, routin
 chapter: 12
 ---
 
-[[toc]]
+<strong>toc</strong>
 
 # Key Concepts 🔑
-- The growing number of devices exhausted the [[IPv4 Issues|IPv4]] address pool, driving adoption of [[IPv6]] and its 128‑bit space.  
+- The growing number of devices exhausted the <strong>IPv4 Issues|IPv4</strong> address pool, driving adoption of <strong>IPv6</strong> and its 128‑bit space.  
 - IPv6 addresses are written as eight hexadecimal **hexet** groups; leading zeros may be dropped and a single `::` compresses one run of zeros.  
-- Address types: **Unicast** (including [[Global Unicast Address (GUA)]], [[Link-Local Address (LLA)]], [[Unique Local Address (ULA)]], and [[Anycast Address]]), **Multicast**, and *no* broadcast.  
-- A GUA is structured *Global Routing Prefix* / *Subnet ID* / *Interface ID*; /64 is the recommended prefix to support [[SLAAC]].  
-- Hosts auto‑configure using [[Stateless Address Auto‑configuration (SLAAC)]], optionally with Stateless / Stateful [[DHCPv6]], and verify uniqueness with [[Duplicate Address Detection (DAD)]].  
+- Address types: **Unicast** (including <strong>Global Unicast Address (GUA)</strong>, <strong>Link-Local Address (LLA)</strong>, <strong>Unique Local Address (ULA)</strong>, and <strong>Anycast Address</strong>), **Multicast**, and *no* broadcast.  
+- A GUA is structured *Global Routing Prefix* / *Subnet ID* / *Interface ID*; /64 is the recommended prefix to support <strong>SLAAC</strong>.  
+- Hosts auto‑configure using <strong>Stateless Address Auto‑configuration (SLAAC)</strong>, optionally with Stateless / Stateful <strong>DHCPv6</strong>, and verify uniqueness with <strong>Duplicate Address Detection (DAD)</strong>.  
 - Interface IDs are created with the **EUI‑64** process or randomly for privacy.  
 - IPv4 and IPv6 can coexist through **Dual‑Stack**, **Tunneling**, and **Translation** (e.g. NAT64).  
-- Key multicast groups include `FF02::1` (all‑nodes) and `FF02::2` (all‑routers); each unicast address also spawns a [[Solicited Node Multicast Address]] for efficient neighbour discovery.
+- Key multicast groups include `FF02::1` (all‑nodes) and `FF02::2` (all‑routers); each unicast address also spawns a <strong>Solicited Node Multicast Address</strong> for efficient neighbour discovery.
 
 # Quiz
 <details>
@@ -79,7 +79,7 @@ IPv6 subnetting organises networks hierarchically rather than conserving address
 
 # Essay Questions
 - Compare and contrast the addressing challenges in IPv4 that led to IPv6, citing regional exhaustion examples.  
-- Explain dynamic GUA assignment methods (Router Solicitation/Advertisement vs. [[DHCPv6]] variants).  
+- Explain dynamic GUA assignment methods (Router Solicitation/Advertisement vs. <strong>DHCPv6</strong> variants).  
 - Discuss IPv6 unicast address types, their scope, and typical ranges.  
 - Detail the rules for abbreviating IPv6 addresses and illustrate with examples.  
 - Analyse IPv6 multicast address categories, highlighting solicited‑node vs. well‑known groups.
@@ -112,48 +112,48 @@ IPv6 subnetting organises networks hierarchically rather than conserving address
 # Glossary
 | Term                                  | Definition                                                                     |
 | ------------------------------------- | ------------------------------------------------------------------------------ |
-| [[Anycast Address]]                   | Unicast address assigned to multiple devices; traffic goes to the nearest one. |
-| [[DHCPv6]]                            | Protocol for dynamic IPv6 addressing and configuration parameters.             |
-| [[Duplicate Address Detection (DAD)]] | Process ensuring no duplicate unicast address exists on a link.                |
-| [[Dual Stack]]                        | Running IPv4 and IPv6 simultaneously on the same device or network.            |
-| [[EUI-64]]                            | Method of creating a 64‑bit Interface ID from a 48‑bit MAC address.            |
-| [[Global Routing Prefix]]             | First part of a GUA, allocated by an ISP/RIR.                                  |
-| [[Global Unicast Address (GUA)]]      | Globally unique IPv6 unicast address, routable on the internet.                |
-| [[Hexadecimal]]                       | Base‑16 numbering system (0–F) used in IPv6 notation.                          |
-| [[Hexet]]                             | Informal term for a 16‑bit segment of an IPv6 address.                         |
-| [[Interface ID]]                      | Last 64 bits of an IPv6 address identifying a host on the subnet.              |
-| [[IPv4 Issues]]                       | Limitations of IPv4, chiefly its limited 32‑bit address space.                 |
-| [[IPv6]]                              | Next‑generation Internet Protocol with a 128‑bit address space.                |
-| [[Link-Local Address (LLA)]]          | Address in `FE80::/10`, valid only on the local link.                          |
-| [[Loopback Address]]                  | `::1/128`, used for host self‑communication.                                   |
-| [[Multicast Address]]                 | IPv6 address targeting multiple recipients simultaneously.                     |
-| [[Prefix Length]]                     | Slash notation indicating network portion of an IPv6 address (e.g. /64).       |
-| [[Preferred Format]]                  | Standard IPv6 notation of eight hexets separated by colons.                    |
-| [[Router Advertisement (RA)]]         | ICMPv6 message providing prefix, gateway, and config flags.                    |
-| [[Router Solicitation (RS)]]          | ICMPv6 message from host requesting RAs.                                       |
-| [[Rule 1 (Leading Zeros)]]            | Leading zeros in a hexet may be omitted.                                       |
-| [[Rule 2 (Double Colon)]]             | One contiguous zero sequence may be compressed with `::`.                      |
-| [[SLAAC]]                             | Stateless Address Auto‑configuration for self‑assigning GUAs.                  |
-| [[Solicited Node Multicast Address]]  | Auto‑generated multicast used in neighbour discovery.                          |
-| [[Stateful DHCPv6]]                   | Server assigns full IPv6 address and options.                                  |
-| [[Stateless DHCPv6]]                  | Server supplies options; host derives its own address via SLAAC.               |
-| [[Subnet ID]]                         | Bits in a GUA used by organisations to create subnets.                         |
-| [[Tunneling]]                         | Encapsulating IPv6 in IPv4 (or vice versa) to cross incompatible segments.     |
-| [[Translation]]                       | NAT64 or similar conversion between IPv4 and IPv6.                             |
-| [[Unique Local Address (ULA)]]        | Private‑scope unicast addresses in `FC00::/7`–`FDFF::/7`.                      |
-| [[Unicast Address]]                   | Address that identifies a single destination interface.                        |
-| [[Unspecified Address]]               | `::/128`, used when a host lacks a configured IP source.                       |
-| [[Well-Known Multicast Address]]      | Predefined multicast groups like all‑nodes and all‑routers.                    |
+| <strong>Anycast Address</strong>                   | Unicast address assigned to multiple devices; traffic goes to the nearest one. |
+| <strong>DHCPv6</strong>                            | Protocol for dynamic IPv6 addressing and configuration parameters.             |
+| <strong>Duplicate Address Detection (DAD)</strong> | Process ensuring no duplicate unicast address exists on a link.                |
+| <strong>Dual Stack</strong>                        | Running IPv4 and IPv6 simultaneously on the same device or network.            |
+| <strong>EUI-64</strong>                            | Method of creating a 64‑bit Interface ID from a 48‑bit MAC address.            |
+| <strong>Global Routing Prefix</strong>             | First part of a GUA, allocated by an ISP/RIR.                                  |
+| <strong>Global Unicast Address (GUA)</strong>      | Globally unique IPv6 unicast address, routable on the internet.                |
+| <strong>Hexadecimal</strong>                       | Base‑16 numbering system (0–F) used in IPv6 notation.                          |
+| <strong>Hexet</strong>                             | Informal term for a 16‑bit segment of an IPv6 address.                         |
+| <strong>Interface ID</strong>                      | Last 64 bits of an IPv6 address identifying a host on the subnet.              |
+| <strong>IPv4 Issues</strong>                       | Limitations of IPv4, chiefly its limited 32‑bit address space.                 |
+| <strong>IPv6</strong>                              | Next‑generation Internet Protocol with a 128‑bit address space.                |
+| <strong>Link-Local Address (LLA)</strong>          | Address in `FE80::/10`, valid only on the local link.                          |
+| <strong>Loopback Address</strong>                  | `::1/128`, used for host self‑communication.                                   |
+| <strong>Multicast Address</strong>                 | IPv6 address targeting multiple recipients simultaneously.                     |
+| <strong>Prefix Length</strong>                     | Slash notation indicating network portion of an IPv6 address (e.g. /64).       |
+| <strong>Preferred Format</strong>                  | Standard IPv6 notation of eight hexets separated by colons.                    |
+| <strong>Router Advertisement (RA)</strong>         | ICMPv6 message providing prefix, gateway, and config flags.                    |
+| <strong>Router Solicitation (RS)</strong>          | ICMPv6 message from host requesting RAs.                                       |
+| <strong>Rule 1 (Leading Zeros)</strong>            | Leading zeros in a hexet may be omitted.                                       |
+| <strong>Rule 2 (Double Colon)</strong>             | One contiguous zero sequence may be compressed with `::`.                      |
+| <strong>SLAAC</strong>                             | Stateless Address Auto‑configuration for self‑assigning GUAs.                  |
+| <strong>Solicited Node Multicast Address</strong>  | Auto‑generated multicast used in neighbour discovery.                          |
+| <strong>Stateful DHCPv6</strong>                   | Server assigns full IPv6 address and options.                                  |
+| <strong>Stateless DHCPv6</strong>                  | Server supplies options; host derives its own address via SLAAC.               |
+| <strong>Subnet ID</strong>                         | Bits in a GUA used by organisations to create subnets.                         |
+| <strong>Tunneling</strong>                         | Encapsulating IPv6 in IPv4 (or vice versa) to cross incompatible segments.     |
+| <strong>Translation</strong>                       | NAT64 or similar conversion between IPv4 and IPv6.                             |
+| <strong>Unique Local Address (ULA)</strong>        | Private‑scope unicast addresses in `FC00::/7`–`FDFF::/7`.                      |
+| <strong>Unicast Address</strong>                   | Address that identifies a single destination interface.                        |
+| <strong>Unspecified Address</strong>               | `::/128`, used when a host lacks a configured IP source.                       |
+| <strong>Well-Known Multicast Address</strong>      | Predefined multicast groups like all‑nodes and all‑routers.                    |
 
 # Chapter Summary
 - IPv6’s 128‑bit space eliminates address scarcity and supports future growth.  
 - Hexadecimal notation with abbreviation rules (`::`, leading‑zero suppression) keeps addresses readable.  
 - Address types: Unicast (GUA, LLA, ULA, Anycast), Multicast; Broadcast is obsolete.  
-- Standard /64 subnets enable [[SLAAC]] and consistent Interface ID generation (EUI‑64 or random).  
-- Devices auto‑configure via RS/RA and optionally [[DHCPv6]]; DAD prevents duplicates.  
+- Standard /64 subnets enable <strong>SLAAC</strong> and consistent Interface ID generation (EUI‑64 or random).  
+- Devices auto‑configure via RS/RA and optionally <strong>DHCPv6</strong>; DAD prevents duplicates.  
 - IPv6 coexists with IPv4 through Dual‑Stack, Tunneling, and Translation mechanisms.  
 - Multicast (`FF02::1`, `FF02::2`, solicited‑node) replaces IPv4 broadcast for efficient neighbour discovery.
 
 ---
 
-Related: [[CCNA – Chapter 11]] | [[CCNA – Chapter 13]]
+Related: <strong>CCNA – Chapter 11</strong> | <strong>CCNA – Chapter 13</strong>

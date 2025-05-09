@@ -5,12 +5,12 @@ chapter: 05
 ---
 # Key Concepts 🔑
 
-- Networking uses three primary number systems: [[Decimal]], [[Binary]], and [[Hexadecimal]].
-- [[Binary]] is fundamental for devices to communicate and represent [[IPv4]] addresses.
-- [[Hexadecimal]] is essential for compactly representing large binary numbers, such as [[IPv6]] addresses.
-- An [[IPv4]] address consists of four 8-bit [[Octets]] (32 bits total), displayed in [[Dotted-decimal form]].
-- [[IPv6]] uses eight 16-bit segments (128 bits total), shown as [[Hextets]] in hexadecimal.
-- [[Positional Notation]] is used in all number systems to determine a digit’s value based on its place.
+- Networking uses three primary number systems: <strong>Decimal</strong>, <strong>Binary</strong>, and <strong>Hexadecimal</strong>.
+- <strong>Binary</strong> is fundamental for devices to communicate and represent <strong>IPv4</strong> addresses.
+- <strong>Hexadecimal</strong> is essential for compactly representing large binary numbers, such as <strong>IPv6</strong> addresses.
+- An <strong>IPv4</strong> address consists of four 8-bit <strong>Octets</strong> (32 bits total), displayed in <strong>Dotted-decimal form</strong>.
+- <strong>IPv6</strong> uses eight 16-bit segments (128 bits total), shown as <strong>Hextets</strong> in hexadecimal.
+- <strong>Positional Notation</strong> is used in all number systems to determine a digit’s value based on its place.
 - Conversions between number systems (Decimal ↔ Binary ↔ Hex) are foundational for understanding and troubleshooting network addresses.
 - Each hexadecimal digit represents 4 bits; this makes Hex ideal for MAC and IPv6 address readability.
 - Networking professionals must master these conversions to read, configure, and debug network devices.
@@ -29,17 +29,17 @@ Networking devices use binary because they operate using electrical signals that
 
 <details>
 <summary>What is an octet in the context of IPv4 addressing?</summary>
-An [[Octet]] is one of the four 8-bit groups that make up an IPv4 address.
+An <strong>Octet</strong> is one of the four 8-bit groups that make up an IPv4 address.
 </details>
 
 <details>
 <summary>How many bits are in a single octet?</summary>
-There are 8 bits in a single [[Octet]].
+There are 8 bits in a single <strong>Octet</strong>.
 </details>
 
 <details>
 <summary>How is an IPv4 address typically displayed for humans?</summary>
-In [[Dotted-decimal form]], with decimal values of each [[Octet]] separated by dots.
+In <strong>Dotted-decimal form</strong>, with decimal values of each <strong>Octet</strong> separated by dots.
 </details>
 
 <details>
@@ -59,7 +59,7 @@ It is the base raised to the power of 0, which equals 1.
 
 <details>
 <summary>Why is the hexadecimal system necessary, especially for IPv6?</summary>
-It provides a compact representation of large binary numbers, like [[IPv6]] addresses.
+It provides a compact representation of large binary numbers, like <strong>IPv6</strong> addresses.
 </details>
 
 <details>
@@ -88,7 +88,7 @@ Understanding conversions enables accurate configuration, interpretation, and tr
 
 <details>
 <summary>Compare and contrast the structure and representation of IPv4 and IPv6 addresses, highlighting the role of octets and hextets.</summary>
-IPv4 uses four 8-bit [[Octets]] in [[Dotted-decimal form]] (e.g., 192.168.0.1), while IPv6 uses eight 16-bit [[Hextets]] in hexadecimal format (e.g., 2001:0db8::1).
+IPv4 uses four 8-bit <strong>Octets</strong> in <strong>Dotted-decimal form</strong> (e.g., 192.168.0.1), while IPv6 uses eight 16-bit <strong>Hextets</strong> in hexadecimal format (e.g., 2001:0db8::1).
 </details>
 
 <details>
@@ -98,7 +98,7 @@ Each digit's value is its base (10 or 2) raised to the power of its position. Ri
 
 <details>
 <summary>Explain why hexadecimal is a more efficient way to represent large binary numbers compared to decimal, and discuss its application in networking beyond IPv6.</summary>
-One hex digit represents 4 bits, making it compact and human-readable. It’s used in [[IPv6]] and [[MAC addresses]], where binary would be too long and error-prone.
+One hex digit represents 4 bits, making it compact and human-readable. It’s used in <strong>IPv6</strong> and <strong>MAC addresses</strong>, where binary would be too long and error-prone.
 </details>
 
 # FAQ
@@ -110,19 +110,19 @@ One hex digit represents 4 bits, making it compact and human-readable. It’s us
 > Devices communicate using binary—networks are built on bit-level addressing.
 
 > [!tip]+ What is dotted-decimal format and why is it used?
-> It's a human-readable version of binary IPv4 addresses: four decimal [[Octets]] separated by dots.
+> It's a human-readable version of binary IPv4 addresses: four decimal <strong>Octets</strong> separated by dots.
 
 > [!faq]+ How are numbers converted between binary and decimal?
 > Use positional notation: binary digits are multiplied by 2 raised to their position index and summed.
 
 > [!info]+ What is an octet and how does it relate to IPv4?
-> An [[Octet]] is an 8-bit group; IPv4 addresses have four of them.
+> An <strong>Octet</strong> is an 8-bit group; IPv4 addresses have four of them.
 
 > [!tip]+ What is hexadecimal and why is it used in networking?
-> [[Hexadecimal]] is compact (4 bits per digit) and ideal for representing large binary numbers like in IPv6.
+> <strong>Hexadecimal</strong> is compact (4 bits per digit) and ideal for representing large binary numbers like in IPv6.
 
 > [!info]+ How does hexadecimal relate to IPv6 addresses?
-> IPv6 = 128 bits = 32 hex digits grouped into eight [[Hextets]] (e.g., 2001:0db8:0000:0000:0000:0000:0000:0001)
+> IPv6 = 128 bits = 32 hex digits grouped into eight <strong>Hextets</strong> (e.g., 2001:0db8:0000:0000:0000:0000:0000:0001)
 
 > [!faq]+ How are numbers converted between hexadecimal and decimal?
 > Hex → Binary → Decimal, or vice versa, using 4-bit groups and positional values.
@@ -131,30 +131,30 @@ One hex digit represents 4 bits, making it compact and human-readable. It’s us
 
 | Term                       | Definition                                                                 |
 |---------------------------|----------------------------------------------------------------------------|
-| [[Binary]]                | A base-2 number system using digits 0 and 1.                              |
-| [[Bit]]                   | A single binary digit (0 or 1).                                           |
-| [[Decimal]]               | A base-10 number system using digits 0 through 9.                         |
-| [[Dotted-decimal form]]   | A readable IPv4 format using decimal values of four octets separated by dots. |
-| [[Hextet]]                | A group of four hexadecimal digits in IPv6 addressing.                    |
-| [[Hexadecimal]]           | A base-16 number system using digits 0–9 and A–F.                         |
-| [[IPv4]]                  | Internet Protocol version 4, uses 32-bit addresses (in dotted-decimal).   |
-| [[IPv6]]                  | Internet Protocol version 6, uses 128-bit addresses (in hexadecimal).     |
-| [[Octet]]                 | A group of 8 bits; a basic unit in IPv4 addressing.                       |
-| [[Positional Notation]]   | Number value system based on digit position and base (e.g., 2⁰, 2¹, etc.).|
+| <strong>Binary</strong>                | A base-2 number system using digits 0 and 1.                              |
+| <strong>Bit</strong>                   | A single binary digit (0 or 1).                                           |
+| <strong>Decimal</strong>               | A base-10 number system using digits 0 through 9.                         |
+| <strong>Dotted-decimal form</strong>   | A readable IPv4 format using decimal values of four octets separated by dots. |
+| <strong>Hextet</strong>                | A group of four hexadecimal digits in IPv6 addressing.                    |
+| <strong>Hexadecimal</strong>           | A base-16 number system using digits 0–9 and A–F.                         |
+| <strong>IPv4</strong>                  | Internet Protocol version 4, uses 32-bit addresses (in dotted-decimal).   |
+| <strong>IPv6</strong>                  | Internet Protocol version 6, uses 128-bit addresses (in hexadecimal).     |
+| <strong>Octet</strong>                 | A group of 8 bits; a basic unit in IPv4 addressing.                       |
+| <strong>Positional Notation</strong>   | Number value system based on digit position and base (e.g., 2⁰, 2¹, etc.).|
 
 # Chapter Summary
 
 - Networking uses Decimal, Binary, and Hexadecimal systems.
 - Binary is essential for how devices interpret IP addresses.
-- IPv4 addresses consist of four 8-bit [[Octets]].
-- IPv4 is displayed in human-friendly [[Dotted-decimal form]].
-- Each digit’s value is based on [[Positional Notation]].
-- IPv6 uses [[Hexadecimal]] and is structured in eight [[Hextets]].
+- IPv4 addresses consist of four 8-bit <strong>Octets</strong>.
+- IPv4 is displayed in human-friendly <strong>Dotted-decimal form</strong>.
+- Each digit’s value is based on <strong>Positional Notation</strong>.
+- IPv6 uses <strong>Hexadecimal</strong> and is structured in eight <strong>Hextets</strong>.
 - 1 Hex digit = 4 bits, making long binary sequences manageable.
 - Number conversions (Binary ⇄ Decimal ⇄ Hex) are core skills.
-- [[IPv4]] uses 32-bit addresses; [[IPv6]] uses 128-bit addresses.
+- <strong>IPv4</strong> uses 32-bit addresses; <strong>IPv6</strong> uses 128-bit addresses.
 - Understanding these systems is key for configuration and troubleshooting.
 
 ---
 
-Related: [[CCNA – Chapter 04]] | [[CCNA – Chapter 06]]
+Related: <strong>CCNA – Chapter 04</strong> | <strong>CCNA – Chapter 06</strong>

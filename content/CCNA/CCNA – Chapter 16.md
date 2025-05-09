@@ -4,12 +4,12 @@ tags: [ccna, chapter-16, networking, study, network-security, security, malware,
 chapter: 16
 ---
 
-[[toc]]
+<strong>toc</strong>
 
 # Key Concepts 🔑
 - Networks face threats exploiting **technological**, **configuration**, and **policy-related** vulnerabilities.  
 - **Defense-in-Depth**: layered security using firewalls, VPNs, IPS, AAA, ESA/WSA.  
-- **Malware** types: [[Virus]], [[Worm]], [[Trojan Horse]]; plus ransomware, spyware, adware.  
+- **Malware** types: <strong>Virus</strong>, <strong>Worm</strong>, <strong>Trojan Horse</strong>; plus ransomware, spyware, adware.  
 - **Reconnaissance** gathers network info (IP maps, services, vulnerabilities).  
 - **Access Attacks**: password attacks, trust exploitation, port redirection, man-in-the-middle.   q
 - **DoS** vs. **DDoS**: overwhelming resources with single vs. multiple zombie sources.  
@@ -26,12 +26,12 @@ Technology vulnerabilities (protocol/OS/equipment flaws), configuration vulnerab
 
 <details>
 <summary>Describe the main difference between a virus and a worm.</summary>
-A [[Virus]] inserts into programs and needs user action to spread; a [[Worm]] is self-replicating and spreads without human interaction.
+A <strong>Virus</strong> inserts into programs and needs user action to spread; a <strong>Worm</strong> is self-replicating and spreads without human interaction.
 </details>
 
 <details>
 <summary>What is a Trojan horse in the context of malware?</summary>
-A [[Trojan Horse]] is malware disguised as legitimate software that opens a backdoor when executed.
+A <strong>Trojan Horse</strong> is malware disguised as legitimate software that opens a backdoor when executed.
 </details>
 
 <details>
@@ -167,7 +167,7 @@ Device hardening reduces potential vulnerabilities at the network edge. Disablin
 
 # Chapter Summary
 - Understand the three vulnerability categories: technological, configuration, policy-related.  
-- Recognize malware types: [[Virus]], [[Worm]], [[Trojan Horse]], ransomware.  
+- Recognize malware types: <strong>Virus</strong>, <strong>Worm</strong>, <strong>Trojan Horse</strong>, ransomware.  
 - Know attack phases: reconnaissance → access attacks → DoS/DDoS.  
 - Implement Defense-in-Depth: firewalls, VPNs, IPS, AAA, ESA/WSA.  
 - Harden devices: disable services, enforce strong passwords, enable SSH, apply patches.  
@@ -176,4 +176,4 @@ Device hardening reduces potential vulnerabilities at the network edge. Disablin
 - Secure endpoints with antivirus, NAC, and policies.  
 - Configure firewalls and DMZs to filter traffic and isolate public servers.
 
-Related: [[CCNA – Chapter 15]] | [[CCNA – Chapter 17]]
+Related: <strong>CCNA – Chapter 15</strong> | <strong>CCNA – Chapter 17</strong>

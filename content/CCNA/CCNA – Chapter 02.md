@@ -13,12 +13,12 @@ tags:
 chapter: 3
 ---
 # Key Concepts 🔑
-- Cisco networking devices run the **[[IOS]]** operating system and are administered mainly through the **[[CLI]]**.  
-- The IOS hierarchy includes **[[User EXEC mode]]**, **[[Privileged EXEC mode]]**, **[[Global configuration mode]]**, and several sub‑modes for interfaces and lines.  
-- Secure management uses **[[SSH]]** instead of **[[Telnet]]**, and passwords are protected with **[[service password‑encryption]]** and (where possible) `enable secret`.  
-- Essential device hardening includes setting a unique **[[Hostname]]**, configuring console/VTY passwords, and adding an **[[MOTD banner]]** for legal notice.  
-- The active **[[running-config]]** must be copied to **[[startup-config]]** with `copy run start` (or equivalent) to survive reloads.  
-- A Layer 2 switch gains network‑wide reachability by assigning an IP address to a **[[SVI]]** (commonly VLAN 1).  
+- Cisco networking devices run the **<strong>IOS</strong>** operating system and are administered mainly through the **<strong>CLI</strong>**.  
+- The IOS hierarchy includes **<strong>User EXEC mode</strong>**, **<strong>Privileged EXEC mode</strong>**, **<strong>Global configuration mode</strong>**, and several sub‑modes for interfaces and lines.  
+- Secure management uses **<strong>SSH</strong>** instead of **<strong>Telnet</strong>**, and passwords are protected with **<strong>service password‑encryption</strong>** and (where possible) `enable secret`.  
+- Essential device hardening includes setting a unique **<strong>Hostname</strong>**, configuring console/VTY passwords, and adding an **<strong>MOTD banner</strong>** for legal notice.  
+- The active **<strong>running-config</strong>** must be copied to **<strong>startup-config</strong>** with `copy run start` (or equivalent) to survive reloads.  
+- A Layer 2 switch gains network‑wide reachability by assigning an IP address to a **<strong>SVI</strong>** (commonly VLAN 1).  
 - End devices receive IP settings either manually (static) or dynamically via **DHCP**; IPv6 hosts can also use SLAAC.  
 - Physical connectivity options include copper Ethernet, fibre‑optic links, and wireless NICs; verification tools like `ping` confirm network reachability.
 
@@ -35,7 +35,7 @@ chapter: 3
 
 <details><summary>3  Why is SSH preferred over Telnet for remote management of network devices?</summary>
 
-**Answer:** **[[SSH]]** encrypts all session data, protecting credentials and commands; **[[Telnet]]** transmits them in plain text.  
+**Answer:** **<strong>SSH</strong>** encrypts all session data, protecting credentials and commands; **<strong>Telnet</strong>** transmits them in plain text.  
 </details>
 
 <details><summary>4  Describe the function of the <code>service password‑encryption</code> command.</summary>
@@ -60,7 +60,7 @@ chapter: 3
 
 <details><summary>8  What is a Switch Virtual Interface (SVI) and why configure an IP on it?</summary>
 
-**Answer:** An **[[SVI]]** is a logical VLAN interface on a switch; assigning an IP lets administrators manage the switch over the network.  
+**Answer:** An **<strong>SVI</strong>** is a logical VLAN interface on a switch; assigning an IP lets administrators manage the switch over the network.  
 </details>
 
 <details><summary>9  What is the purpose of a console cable when working with a Cisco device?</summary>
@@ -78,8 +78,8 @@ chapter: 3
 
 **Answer:**  
 - **Console** access is local, requires physical presence, and is indispensable for recovery but lacks encryption (although traffic never traverses the network).  
-- **[[SSH]]** provides encrypted remote access, making it the de‑facto choice for routine administration across insecure networks.  
-- **[[Telnet]]** offers similar functionality to SSH but sends data in clear text, so it is now reserved for lab environments or legacy systems where security is not a concern.  
+- **<strong>SSH</strong>** provides encrypted remote access, making it the de‑facto choice for routine administration across insecure networks.  
+- **<strong>Telnet</strong>** offers similar functionality to SSH but sends data in clear text, so it is now reserved for lab environments or legacy systems where security is not a concern.  
 Appropriate use dictates console for initial provisioning or when the device is isolated, SSH for day‑to‑day management, and Telnet only where risk is minimal or additional encryption (e.g., IPsec) compensates.  
 </details>
 
@@ -97,13 +97,13 @@ This hierarchy enforces role separation—monitoring, global changes, and granul
 <details><summary>3  Detail the steps for securing a new Cisco switch.</summary>
 
 **Answer:**  
-1. Assign a unique **[[Hostname]]** (`hostname sw‑core1`).  
+1. Assign a unique **<strong>Hostname</strong>** (`hostname sw‑core1`).  
 2. Harden access:  
    - Console: `line con 0` → `password cisco` → `login`.  
    - VTY: `line vty 0 15` → `transport input ssh` → `password cisco` → `login`.  
    - Encrypt privileged access with `enable secret cisco`.  
 1. Activate `service password‑encryption`.  
-2. Create an informative **[[MOTD banner]]** (`banner motd #Authorised access only#`).  
+2. Create an informative **<strong>MOTD banner</strong>** (`banner motd #Authorised access only#`).  
 3. Configure an **SVI** IP and default gateway; enable SSH (`ip domain‑name corp.local`, generate RSA keys, create user accounts).  
 4. Save to `startup‑config`.  
 These steps thwart unauthorized logins, protect credentials at rest, and provide accountability.  
@@ -137,10 +137,10 @@ Unsaved changes live only in **running‑config**. Power loss or `reload` revert
 
 # FAQ
 > [!question]+ What is Cisco IOS and how do I access it?  
-> Cisco **[[IOS]]** is the operating system for Cisco routers & switches. Access it locally via a console cable or remotely via **[[SSH]]** (preferred) or **[[Telnet]]** (legacy).
+> Cisco **<strong>IOS</strong>** is the operating system for Cisco routers & switches. Access it locally via a console cable or remotely via **<strong>SSH</strong>** (preferred) or **<strong>Telnet</strong>** (legacy).
 
 > [!question]+ How do I move between command modes?  
-> Use `enable` to reach **[[Privileged EXEC mode]]**, `configure terminal` for **[[Global configuration mode]]**, `exit` to step back, and `end` or Ctrl+Z to jump to Privileged EXEC.
+> Use `enable` to reach **<strong>Privileged EXEC mode</strong>**, `configure terminal` for **<strong>Global configuration mode</strong>**, `exit` to step back, and `end` or Ctrl+Z to jump to Privileged EXEC.
 
 > [!question]+ What is the IOS command structure and help system?  
 > Commands follow *command keyword argument* syntax. Type `?` for context‑sensitive help or after a partial command (e.g., `ip address ?`) to list valid options.
@@ -165,10 +165,10 @@ Unsaved changes live only in **running‑config**. Power loss or `reload` revert
 # Glossary
 | Term | Definition |
 |------|------------|
-| **[[Banner]]** | Message shown to users at login, often for legal notice. |
-| **[[CLI]]** | Text‑based interface where commands configure and monitor a device. |
+| **<strong>Banner</strong>** | Message shown to users at login, often for legal notice. |
+| **<strong>CLI</strong>** | Text‑based interface where commands configure and monitor a device. |
 | **Console** | Physical port for direct, out‑of‑band management access. |
-| **Ctrl+Z** | Shortcut to return immediately to **[[Privileged EXEC mode]]**. |
+| **Ctrl+Z** | Shortcut to return immediately to **<strong>Privileged EXEC mode</strong>**. |
 | **DHCP** | Protocol that auto‑assigns IP configuration to hosts. |
 | **enable** | Command that elevates from User to Privileged EXEC mode. |
 | **enable secret** | Sets an encrypted password protecting Privileged EXEC access. |
@@ -185,11 +185,11 @@ Unsaved changes live only in **running‑config**. Power loss or `reload` revert
 | **Line config mode** | Sub‑mode for console or VTY line parameters. |
 | **login** | Command requiring authentication on a line. |
 | **MOTD banner** | Type of banner displayed at every login. |
-| **NVRAM** | Non‑volatile memory that stores **[[startup-config]]**. |
+| **NVRAM** | Non‑volatile memory that stores **<strong>startup-config</strong>**. |
 | **password** | Sets a plain‑text password (not recommended without encryption). |
 | **Ping** | Utility that tests reachability and round‑trip time. |
 | **Privileged EXEC mode** | Full‑access mode, prompt ends with `#`. |
-| **RAM** | Volatile memory holding the **[[running-config]]**. |
+| **RAM** | Volatile memory holding the **<strong>running-config</strong>**. |
 | **reload** | Command to reboot the device. |
 | **running-config** | Active configuration in RAM. |
 | **service password‑encryption** | Hashes all plain‑text passwords in config files. |
@@ -212,4 +212,4 @@ Unsaved changes live only in **running‑config**. Power loss or `reload` revert
 - End devices can be addressed statically or through **DHCP**/SLAAC.  
 - Verify connectivity with basic tools such as `ping` and monitor physical media suitability.  
 
-Related: [[CCNA – Chapter 01]] | [[CCNA – Chapter 03]]
+Related: <strong>CCNA – Chapter 01</strong> | <strong>CCNA – Chapter 03</strong>

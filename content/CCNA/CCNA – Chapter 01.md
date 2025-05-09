@@ -4,21 +4,21 @@ tags: [ccna, chapter-01, networking, study, fundamentals, lan, wan, security, qo
 chapter: 01
 ---
 
-[[toc]]
+<strong>toc</strong>
 
 # Key Concepts 🔑
-- Modern networks form the backbone of global communication across the [[Internet]], enabling instant, border‑free sharing of data, voice and video.  
-- Every end device (or [[Host]]) uses a Network Interface Card ([[NIC]]) to connect to the network, while intermediary devices (switches, routers, firewalls) steer traffic.  
-- Network structure is documented with both **physical** and **logical** [[Topology]] diagrams, each showing different but complementary views.  
-- A [[LAN]] serves a small geographic area at high speeds; multiple LANs link together over service‑provider infrastructure to form a [[WAN]].  
-- Converged networks carry voice, video and data on the same cables; maintaining quality demands robust [[QoS]] mechanisms.  
-- A **reliable** design balances [[Fault Tolerance]], [[Scalability]], QoS and Security to keep services available despite failures or growth.  
-- Current trends such as [[BYOD]], cloud computing, IoT and online collaboration reshape network design and security policies daily.
+- Modern networks form the backbone of global communication across the <strong>Internet</strong>, enabling instant, border‑free sharing of data, voice and video.  
+- Every end device (or <strong>Host</strong>) uses a Network Interface Card (<strong>NIC</strong>) to connect to the network, while intermediary devices (switches, routers, firewalls) steer traffic.  
+- Network structure is documented with both **physical** and **logical** <strong>Topology</strong> diagrams, each showing different but complementary views.  
+- A <strong>LAN</strong> serves a small geographic area at high speeds; multiple LANs link together over service‑provider infrastructure to form a <strong>WAN</strong>.  
+- Converged networks carry voice, video and data on the same cables; maintaining quality demands robust <strong>QoS</strong> mechanisms.  
+- A **reliable** design balances <strong>Fault Tolerance</strong>, <strong>Scalability</strong>, QoS and Security to keep services available despite failures or growth.  
+- Current trends such as <strong>BYOD</strong>, cloud computing, IoT and online collaboration reshape network design and security policies daily.
 
 # Quiz
 <details>
 <summary>1. Explain the difference between a server and a client in a network context.</summary>
-A **[[Server]]** provides resources or services—such as files or websites—while a **[[Client]]** is the device or software that requests and consumes those services.
+A **<strong>Server</strong>** provides resources or services—such as files or websites—while a **<strong>Client</strong>** is the device or software that requests and consumes those services.
 </details>
 
 <details>
@@ -43,7 +43,7 @@ A **physical topology** shows actual device locations and cabling; a **logical t
 
 <details>
 <summary>6. What is the main difference between a Local Area Network (LAN) and a Wide Area Network (WAN)?</summary>
-A [[LAN]] covers a small area and is owned/managed by one organisation; a [[WAN]] spans large areas, interconnecting multiple LANs, and is typically provisioned via service providers.
+A <strong>LAN</strong> covers a small area and is owned/managed by one organisation; a <strong>WAN</strong> spans large areas, interconnecting multiple LANs, and is typically provisioned via service providers.
 </details>
 
 <details>
@@ -53,17 +53,17 @@ A converged network carries multiple traffic types—voice, video and traditiona
 
 <details>
 <summary>8. Identify two essential characteristics of a reliable network architecture.</summary>
-Fault tolerance (redundant paths) and scalability (ability to grow). [[QoS]] and security are also key reliability pillars.
+Fault tolerance (redundant paths) and scalability (ability to grow). <strong>QoS</strong> and security are also key reliability pillars.
 </details>
 
 <details>
 <summary>9. What is BYOD and how does it relate to modern networking trends?</summary>
-**[[BYOD]]** (“Bring Your Own Device”) allows users’ personal devices onto corporate networks, raising productivity but introducing new security and management challenges.
+**<strong>BYOD</strong>** (“Bring Your Own Device”) allows users’ personal devices onto corporate networks, raising productivity but introducing new security and management challenges.
 </details>
 
 <details>
 <summary>10. Name one security solution used in enterprise networks that might not be common in a home network.</summary>
-An Intrusion Prevention System (**[[IPS]]**) is common in enterprises but rarely deployed in home environments.
+An Intrusion Prevention System (**<strong>IPS</strong>**) is common in enterprises but rarely deployed in home environments.
 </details>
 
 # Essay Questions
@@ -88,7 +88,7 @@ In a **client‑server** architecture, dedicated servers host resources and enfo
 - **Fault Tolerance:** Redundant links and devices allow alternate paths so traffic keeps flowing after a failure.  
 - **Scalability:** Modular design and hierarchical layout enable seamless expansion without re‑architecting or degrading throughput.  
 - **Quality of Service (QoS):** Classification and queuing prioritise delay‑sensitive traffic (voice, video), ensuring quality even during congestion.  
-- **Security:** Confidentiality, integrity and availability safeguards—implemented via ACLs, firewalls, [[VPN]]s and IPS—protect data and services from threats.  
+- **Security:** Confidentiality, integrity and availability safeguards—implemented via ACLs, firewalls, <strong>VPN</strong>s and IPS—protect data and services from threats.  
 Together, these traits deliver consistent, high‑availability performance as demand or conditions change.
 
 </details>
@@ -116,61 +116,61 @@ Collectively, these trends push architects toward converged, programmable and hi
 > Networks enable omnipresent communication—instant messaging, email, social media—making information sharing and human connection possible anywhere, anytime.
 
 > [!faq]+ What are the fundamental components of a network?  
-> **Hosts/End devices**, **[[Server]]s**, **[[Client]]s**, intermediary devices (switches, routers, wireless APs, firewalls) and physical or wireless media.
+> **Hosts/End devices**, **<strong>Server</strong>s**, **<strong>Client</strong>s**, intermediary devices (switches, routers, wireless APs, firewalls) and physical or wireless media.
 
 > [!faq]+ How are networks represented and what are the different ways to visualise their structure?  
 > Through topology diagrams: **physical topology** (device locations, cabling) and **logical topology** (data flow, addressing, ports).
 
 > [!faq]+ What are the main types of networks based on size and coverage?  
-> Personal (PAN), **[[LAN]]**, **[[WAN]]**, home, SOHO, enterprise and global networks such as the [[Internet]], plus private **Intranet**s and **Extranet**s.
+> Personal (PAN), **<strong>LAN</strong>**, **<strong>WAN</strong>**, home, SOHO, enterprise and global networks such as the <strong>Internet</strong>, plus private **Intranet**s and **Extranet**s.
 
 > [!faq]+ What are the common types of internet connections available for homes and businesses?  
 > Home: Cable, DSL, Cellular, Satellite; Business: Dedicated Leased Lines, Metro Ethernet, Symmetric DSL, Enterprise Satellite, Fiber.
 
 > [!faq]+ What are the key characteristics of a reliable network?  
-> **Fault Tolerance**, **Scalability**, **[[QoS]]** and **Security**—often implemented via packet‑switched redundancy, priority queuing and layered defences.
+> **Fault Tolerance**, **Scalability**, **<strong>QoS</strong>** and **Security**—often implemented via packet‑switched redundancy, priority queuing and layered defences.
 
 > [!faq]+ What are some major current trends shaping networking today?  
-> **[[BYOD]]**, online collaboration/video, cloud computing, IoT, Powerline Networking and wireless broadband growth.
+> **<strong>BYOD</strong>**, online collaboration/video, cloud computing, IoT, Powerline Networking and wireless broadband growth.
 
 > [!faq]+ What are the primary security threats and common solutions in networking?  
-> External threats (malware, DDoS) and internal threats (insider misuse); countered by firewalls, [[ACL]]s, [[IPS]], antivirus and VPNs.
+> External threats (malware, DDoS) and internal threats (insider misuse); countered by firewalls, <strong>ACL</strong>s, <strong>IPS</strong>, antivirus and VPNs.
 
 # Glossary
 | Term | Definition |
 | --- | --- |
-| [[ACL]] | List of rules on a device that permit or deny specified traffic. |
-| [[BYOD]] | Policy allowing personal devices to access organisational resources. |
-| [[Circuit Switching]] | Dedicated end‑to‑end path reserved for the entire conversation. |
-| [[Client]] | Host that requests resources or services from a server. |
-| [[Cloud Computing]] | On‑demand delivery of compute/storage/services via the Internet. |
-| [[Converged Network]] | Single infrastructure carrying voice, video and data traffic. |
-| [[Data Center]] | Facility housing servers, storage and network hardware. |
-| [[End Device (Host)]] | Source or destination device for network messages. |
-| [[Extranet]] | Private network providing limited access to external partners. |
-| [[Fault Tolerance]] | Capability to keep operating despite failures via redundancy. |
-| [[Host]] | See **End Device**—a device that sends or receives data. |
-| [[Interface]] | Physical or logical port through which data enters/exits a device. |
-| [[Intermediary Networking Devices]] | Switches, routers, firewalls that forward or filter traffic. |
-| [[Internet]] | Global “network of networks” using TCP/IP. |
-| [[Intranet]] | Private internal network using Internet technologies. |
-| [[IPS]] | Intrusion Prevention System that detects and blocks malicious traffic. |
-| [[ISP]] | Company that provides Internet connectivity services. |
-| [[LAN]] | High‑speed network covering a small geographic area. |
-| [[Logical Topology]] | Map of data paths, addressing and port relationships. |
-| [[Network Interface Card (NIC)]] | Hardware adapter connecting a host to a network medium. |
-| [[Packet Switching]] | Data split into packets that traverse best paths independently. |
-| [[Peer‑to‑Peer Network]] | Architecture where each host both requests and provides resources. |
-| [[Physical Topology]] | Diagram of actual device locations and cabling. |
-| [[Port]] | Physical connector or logical endpoint used by protocols. |
-| [[Powerline Networking (Ethernet over Power)]] | Data transmitted over existing electrical wiring. |
-| [[QoS]] | Techniques ensuring priority or guaranteed performance for select traffic. |
-| [[Scalability]] | Ease with which a network grows without performance loss. |
-| [[Server]] | Host that provides resources/services to clients. |
-| [[Topology]] | Arrangement and interconnection pattern of network devices. |
-| [[VPN]] | Encrypted tunnel that extends a private network across a public one. |
-| [[WAN]] | Network that spans large areas, connecting multiple LANs. |
-| [[Wireless Broadband]] | High‑speed Internet delivered via wireless technologies. |
+| <strong>ACL</strong> | List of rules on a device that permit or deny specified traffic. |
+| <strong>BYOD</strong> | Policy allowing personal devices to access organisational resources. |
+| <strong>Circuit Switching</strong> | Dedicated end‑to‑end path reserved for the entire conversation. |
+| <strong>Client</strong> | Host that requests resources or services from a server. |
+| <strong>Cloud Computing</strong> | On‑demand delivery of compute/storage/services via the Internet. |
+| <strong>Converged Network</strong> | Single infrastructure carrying voice, video and data traffic. |
+| <strong>Data Center</strong> | Facility housing servers, storage and network hardware. |
+| <strong>End Device (Host)</strong> | Source or destination device for network messages. |
+| <strong>Extranet</strong> | Private network providing limited access to external partners. |
+| <strong>Fault Tolerance</strong> | Capability to keep operating despite failures via redundancy. |
+| <strong>Host</strong> | See **End Device**—a device that sends or receives data. |
+| <strong>Interface</strong> | Physical or logical port through which data enters/exits a device. |
+| <strong>Intermediary Networking Devices</strong> | Switches, routers, firewalls that forward or filter traffic. |
+| <strong>Internet</strong> | Global “network of networks” using TCP/IP. |
+| <strong>Intranet</strong> | Private internal network using Internet technologies. |
+| <strong>IPS</strong> | Intrusion Prevention System that detects and blocks malicious traffic. |
+| <strong>ISP</strong> | Company that provides Internet connectivity services. |
+| <strong>LAN</strong> | High‑speed network covering a small geographic area. |
+| <strong>Logical Topology</strong> | Map of data paths, addressing and port relationships. |
+| <strong>Network Interface Card (NIC)</strong> | Hardware adapter connecting a host to a network medium. |
+| <strong>Packet Switching</strong> | Data split into packets that traverse best paths independently. |
+| <strong>Peer‑to‑Peer Network</strong> | Architecture where each host both requests and provides resources. |
+| <strong>Physical Topology</strong> | Diagram of actual device locations and cabling. |
+| <strong>Port</strong> | Physical connector or logical endpoint used by protocols. |
+| <strong>Powerline Networking (Ethernet over Power)</strong> | Data transmitted over existing electrical wiring. |
+| <strong>QoS</strong> | Techniques ensuring priority or guaranteed performance for select traffic. |
+| <strong>Scalability</strong> | Ease with which a network grows without performance loss. |
+| <strong>Server</strong> | Host that provides resources/services to clients. |
+| <strong>Topology</strong> | Arrangement and interconnection pattern of network devices. |
+| <strong>VPN</strong> | Encrypted tunnel that extends a private network across a public one. |
+| <strong>WAN</strong> | Network that spans large areas, connecting multiple LANs. |
+| <strong>Wireless Broadband</strong> | High‑speed Internet delivered via wireless technologies. |
 
 # Chapter Summary
 - Digital connectivity is now as vital as core human needs, linking billions across the globe.  
@@ -182,4 +182,4 @@ Collectively, these trends push architects toward converged, programmable and hi
 - Internet access options range from consumer Cable/DSL to enterprise leased lines with stringent SLAs.  
 - The CCNA certification validates these foundational concepts and opens numerous IT career paths.
 
-Related: [[CCNA – Chapter 00]] | [[CCNA – Chapter 02]]
+Related: <strong>CCNA – Chapter 00</strong> | <strong>CCNA – Chapter 02</strong>
