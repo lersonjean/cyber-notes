@@ -1,3 +1,12 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+/* example: colour all internal links exactly like the demo site */
+a.internal-link {
+    color: var(--theme-accent) !important;
+    text-decoration: underline dotted;
+  }
+  
+  /* dark-mode only tweaks (Quartz still toggles [saved-theme="dark"]) */
+  [saved-theme="dark"] strong   { color: #e98ea8 !important; }  // pink
+  [saved-theme="dark"] em       { color: #afe2a4 !important; }  // green
