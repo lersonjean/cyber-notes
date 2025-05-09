@@ -1,8 +1,3 @@
----
-title: "DNS"
-tags: [ccna, glossary]
----
-
-## Definition
+# Definition
 
 Definition forthcoming.
